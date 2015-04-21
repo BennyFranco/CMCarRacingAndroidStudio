@@ -5,9 +5,17 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 8
+        minSdkVersion 15
+        targetSdkVersion 19
     }
+
+
+sourceSets {
+    main {
+        jni.srcDirs = []
+        // This needs to be done so that gradle does not know about your jni. There are errors otherwise
+    }
+}
 
     buildTypes {
         release {
@@ -15,6 +23,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
 }
 
 dependencies {

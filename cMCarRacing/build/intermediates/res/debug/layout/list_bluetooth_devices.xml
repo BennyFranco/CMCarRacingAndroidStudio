@@ -33,4 +33,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Scan for devices"/>
-</LinearLayout><!-- From: file:/Users/bennyfranco/AndroidStudioProjects/CMCarRacing/cMCarRacing/src/main/res/layout/list_bluetooth_devices.xml -->
+</LinearLayout><!-- From: file:/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/src/main/res/layout/list_bluetooth_devices.xml -->

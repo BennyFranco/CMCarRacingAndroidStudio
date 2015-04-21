@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/bennyfranco/AndroidStudioProjects/CMCarRacing/andEnginePhysicsBox2DExtension/assets"/></dataSet><dataSet config="release"><source path="/Users/bennyfranco/AndroidStudioProjects/CMCarRacing/andEnginePhysicsBox2DExtension/src/release/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/andEnginePhysicsBox2DExtension/src/main/assets"/></dataSet><dataSet config="release"><source path="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/andEnginePhysicsBox2DExtension/src/release/assets"/></dataSet></merger>

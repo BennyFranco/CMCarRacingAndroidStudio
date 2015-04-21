@@ -21,4 +21,4 @@
 			android:singleLine="false"
 			android:hint="@string/textbreakexample_text_default"/>
 	</LinearLayout>
-</LinearLayout><!-- From: file:/Users/bennyfranco/AndroidStudioProjects/CMCarRacing/cMCarRacing/src/main/res/layout/textbreakexample.xml -->
+</LinearLayout><!-- From: file:/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/src/main/res/layout/textbreakexample.xml -->

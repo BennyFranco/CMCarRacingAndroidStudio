@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CMCarRacing.iml" filepath="$PROJECT_DIR$/CMCarRacing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CMCarRacingAndroidStudio.iml" filepath="$PROJECT_DIR$/CMCarRacingAndroidStudio.iml" />
       <module fileurl="file://$PROJECT_DIR$/andEngine/andEngine.iml" filepath="$PROJECT_DIR$/andEngine/andEngine.iml" />
       <module fileurl="file://$PROJECT_DIR$/andEngineMultiplayerExtension/andEngineMultiplayerExtension.iml" filepath="$PROJECT_DIR$/andEngineMultiplayerExtension/andEngineMultiplayerExtension.iml" />
       <module fileurl="file://$PROJECT_DIR$/andEnginePhysicsBox2DExtension/andEnginePhysicsBox2DExtension.iml" filepath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/andEnginePhysicsBox2DExtension.iml" />
