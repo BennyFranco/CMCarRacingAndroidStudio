@@ -60,19 +60,19 @@ ADDED from AndroidManifest.xml:25:9
 		ADDED from AndroidManifest.xml:27:13
 	android:name
 		ADDED from AndroidManifest.xml:26:13
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:28:13
-action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:29:17
-	android:name
-		ADDED from AndroidManifest.xml:29:25
-category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:31:17
-	android:name
-		ADDED from AndroidManifest.xml:31:27
 activity#mx.itson.cmcarracing.RacerGameActivity
-ADDED from AndroidManifest.xml:35:9
+ADDED from AndroidManifest.xml:30:9
 	android:label
-		ADDED from AndroidManifest.xml:37:13
+		ADDED from AndroidManifest.xml:32:13
 	android:name
-		ADDED from AndroidManifest.xml:36:13
+		ADDED from AndroidManifest.xml:31:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:34:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:35:17
+	android:name
+		ADDED from AndroidManifest.xml:35:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:37:17
+	android:name
+		ADDED from AndroidManifest.xml:37:27

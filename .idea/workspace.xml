@@ -19,308 +19,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c38db128-a824-4811-8553-66d8f15334a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CMCarRacingAndroidStudio.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_19_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CMCarRacing.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/debug/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/debug/main/jni/Android.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/debug/main/jni/Application.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/debug/main/jni/build.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/debug/main/jni/src/BufferUtils.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/debug/main/jni/src/BufferUtils.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/debug/main/jni/src/GLES20Fix.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/debug/main/jniLibs/armeabi-v7a/libandengine.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/debug/main/jniLibs/armeabi/libandengine.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/debug/main/jniLibs/x86/libandengine.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/release/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/release/main/jni/Android.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/release/main/jni/Application.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/release/main/jni/build.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/release/main/jni/src/BufferUtils.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/release/main/jni/src/BufferUtils.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/release/main/jni/src/GLES20Fix.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/release/main/jniLibs/armeabi-v7a/libandengine.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/release/main/jniLibs/armeabi/libandengine.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/release/main/jniLibs/x86/libandengine.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/exploded-aar/CMCarRacing/andEngine/unspecified/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/exploded-aar/CMCarRacing/andEngine/unspecified/aapt/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/exploded-aar/CMCarRacing/andEngine/unspecified/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/generated/source/buildConfig/androidTest/debug/org/andengine/test/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/generated/source/buildConfig/debug/org/andengine/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/generated/source/buildConfig/release/org/andengine/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/exploded-aar/CMCarRacing/andEngine/unspecified/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/exploded-aar/CMCarRacing/andEngine/unspecified/aapt/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/exploded-aar/CMCarRacing/andEngine/unspecified/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Android.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Application.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Android.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Body.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Body.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Box2D.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/CircleShape.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/CircleShape.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/Shapes/b2CircleShape.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/Shapes/b2CircleShape.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/Shapes/b2PolygonShape.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/Shapes/b2PolygonShape.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/Shapes/b2Shape.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/b2BroadPhase.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/b2BroadPhase.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/b2CollideCircle.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/b2CollidePolygon.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/b2Collision.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/b2Collision.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/b2Distance.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/b2Distance.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/b2DynamicTree.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/b2DynamicTree.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/b2TimeOfImpact.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Collision/b2TimeOfImpact.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Common/b2BlockAllocator.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Common/b2BlockAllocator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Common/b2Math.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Common/b2Math.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Common/b2Settings.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Common/b2Settings.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Common/b2StackAllocator.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Common/b2StackAllocator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Contact.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Contact.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/ContactImpulse.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/ContactImpulse.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/DistanceJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/DistanceJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Contacts/b2CircleContact.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Contacts/b2CircleContact.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Contacts/b2Contact.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Contacts/b2Contact.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Contacts/b2ContactSolver.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Contacts/b2ContactSolver.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Contacts/b2PolygonContact.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Contacts/b2PolygonContact.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Contacts/b2TOISolver.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Contacts/b2TOISolver.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2DistanceJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2DistanceJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2FrictionJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2FrictionJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2GearJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2GearJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2Joint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2Joint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2LineJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2LineJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2MouseJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2MouseJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2PrismaticJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2PulleyJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2PulleyJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2RevoluteJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2WeldJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/Joints/b2WeldJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2Body.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2Body.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2ContactManager.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2ContactManager.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2Fixture.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2Fixture.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2Island.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2Island.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2TimeStep.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2World.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2World.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2WorldCallbacks.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Dynamics/b2WorldCallbacks.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Fixture.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Fixture.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/FrictionJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/FrictionJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/GearJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/GearJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Joint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Joint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/LineJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/LineJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Manifold.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Manifold.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/MouseJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/MouseJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/PolygonShape.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/PolygonShape.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/PrismaticJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/PrismaticJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/PulleyJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/PulleyJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/RevoluteJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/RevoluteJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Shape.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/Shape.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/World.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/Box2D/World.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/build.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/debug/main/jni/build.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Android.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Application.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Android.mk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Body.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Body.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Box2D.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/CircleShape.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/CircleShape.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/Shapes/b2CircleShape.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/Shapes/b2CircleShape.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/Shapes/b2PolygonShape.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/Shapes/b2PolygonShape.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/Shapes/b2Shape.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/b2BroadPhase.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/b2BroadPhase.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/b2CollideCircle.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/b2CollidePolygon.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/b2Collision.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/b2Collision.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/b2Distance.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/b2Distance.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/b2DynamicTree.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/b2DynamicTree.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/b2TimeOfImpact.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Collision/b2TimeOfImpact.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Common/b2BlockAllocator.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Common/b2BlockAllocator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Common/b2Math.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Common/b2Math.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Common/b2Settings.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Common/b2Settings.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Common/b2StackAllocator.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Common/b2StackAllocator.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Contact.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Contact.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/ContactImpulse.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/ContactImpulse.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/DistanceJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/DistanceJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Contacts/b2CircleContact.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Contacts/b2CircleContact.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Contacts/b2Contact.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Contacts/b2Contact.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Contacts/b2ContactSolver.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Contacts/b2ContactSolver.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Contacts/b2PolygonContact.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Contacts/b2PolygonContact.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Contacts/b2TOISolver.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Contacts/b2TOISolver.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2DistanceJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2DistanceJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2FrictionJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2FrictionJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2GearJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2GearJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2Joint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2Joint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2LineJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2LineJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2MouseJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2MouseJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2PrismaticJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2PulleyJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2PulleyJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2RevoluteJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2WeldJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/Joints/b2WeldJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2Body.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2Body.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2ContactManager.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2ContactManager.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2Fixture.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2Fixture.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2Island.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2Island.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2TimeStep.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2World.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2World.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2WorldCallbacks.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Dynamics/b2WorldCallbacks.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Fixture.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Fixture.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/FrictionJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/FrictionJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/GearJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/GearJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Joint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Joint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/LineJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/LineJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Manifold.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Manifold.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/MouseJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/MouseJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/PolygonShape.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/PolygonShape.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/PrismaticJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/PrismaticJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/PulleyJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/PulleyJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/RevoluteJoint.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/RevoluteJoint.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Shape.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/Shape.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/World.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/Box2D/World.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/build.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/release/main/jni/build.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/exploded-aar/CMCarRacing/andEngine/unspecified/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/exploded-aar/CMCarRacing/andEngine/unspecified/aapt/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/exploded-aar/CMCarRacing/andEngine/unspecified/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacing/andEngine/unspecified/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacing/andEngine/unspecified/aapt/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacing/andEngine/unspecified/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacing/andEngineMultiplayerExtension/unspecified/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacing/andEngineMultiplayerExtension/unspecified/aapt/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacing/andEngineMultiplayerExtension/unspecified/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacing/andEnginePhysicsBox2DExtension/unspecified/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacing/andEnginePhysicsBox2DExtension/unspecified/aapt/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacing/andEnginePhysicsBox2DExtension/unspecified/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacing/andEngineTexturePackerExtension/unspecified/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacing/andEngineTexturePackerExtension/unspecified/aapt/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacing/andEngineTexturePackerExtension/unspecified/classes.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/andEngine/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/resources/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/resources/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngine/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/andEngine/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineMultiplayerExtension/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/andEngineMultiplayerExtension/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineTexturePackerExtension/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/andEngineTexturePackerExtension/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/cMCarRacing/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngine/build/generated/source/buildConfig/debug/org/andengine/BuildConfig.java" afterPath="$PROJECT_DIR$/andEngine/build/generated/source/buildConfig/debug/org/andengine/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngine/build/generated/source/buildConfig/release/org/andengine/BuildConfig.java" afterPath="$PROJECT_DIR$/andEngine/build/generated/source/buildConfig/release/org/andengine/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngine/andEngine.iml" afterPath="$PROJECT_DIR$/andEngine/andEngine.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineMultiplayerExtension/andEngineMultiplayerExtension.iml" afterPath="$PROJECT_DIR$/andEngineMultiplayerExtension/andEngineMultiplayerExtension.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/andEnginePhysicsBox2DExtension.iml" afterPath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/andEnginePhysicsBox2DExtension.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineTexturePackerExtension/andEngineTexturePackerExtension.iml" afterPath="$PROJECT_DIR$/andEngineTexturePackerExtension/andEngineTexturePackerExtension.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngine/build.gradle" afterPath="$PROJECT_DIR$/andEngine/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineMultiplayerExtension/build.gradle" afterPath="$PROJECT_DIR$/andEngineMultiplayerExtension/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build.gradle" afterPath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineTexturePackerExtension/build.gradle" afterPath="$PROJECT_DIR$/andEngineTexturePackerExtension/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build.gradle" afterPath="$PROJECT_DIR$/cMCarRacing/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/cMCarRacing.iml" afterPath="$PROJECT_DIR$/cMCarRacing/cMCarRacing.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CMCarRacing.iws" />
@@ -343,7 +43,22 @@
     <favorites_list name="CMCarRacing" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9204244" vertical-offset="208" max-vertical-offset="705">
+              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+              <folding>
+                <element signature="e#700#718#0" expanded="true" />
+                <element signature="e#846#864#0" expanded="true" />
+                <element signature="e#986#1004#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -3334,7 +3049,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/cMCarRacing/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/manifests/tmp/manifestMerger6180947147913697619.xml" />
         <option value="$PROJECT_DIR$/andEngine/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/andEngine/build.gradle" />
@@ -3347,6 +3061,7 @@
         <option value="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build.gradle" />
         <option value="$PROJECT_DIR$/andEngineMultiplayerExtension/build.gradle" />
         <option value="$PROJECT_DIR$/andEngineTexturePackerExtension/build.gradle" />
+        <option value="$PROJECT_DIR$/cMCarRacing/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -3391,15 +3106,29 @@
               <option name="myItemId" value="CMCarRacing" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+              <option name="myItemId" value="CMCarRacing" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cMCarRacing" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="CMCarRacing" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cMCarRacing" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -3618,14 +3347,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="719" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923833" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -3893,29 +3622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/manifests/tmp/manifestMerger6180947147913697619.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17045455" vertical-offset="0" max-vertical-offset="352">
-          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/manifests/tmp/manifestMerger4842254714595518908.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17045455" vertical-offset="0" max-vertical-offset="352">
-          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/manifests/tmp/manifestMerger7211473807151129840.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17045455" vertical-offset="0" max-vertical-offset="352">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.397878" vertical-offset="0" max-vertical-offset="377">
@@ -3928,38 +3634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.67639256" vertical-offset="0" max-vertical-offset="510">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/manifests/tmp/manifestMerger2252466234308324626.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17045455" vertical-offset="0" max-vertical-offset="352">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/manifests/tmp/manifestMerger8899318771950515698.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17045455" vertical-offset="0" max-vertical-offset="352">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/manifests/tmp/manifestMerger4765946930571400147.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17699115" vertical-offset="0" max-vertical-offset="339">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.392573" vertical-offset="0" max-vertical-offset="690">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -4049,6 +3723,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9204244" vertical-offset="208" max-vertical-offset="705">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+          <folding>
+            <element signature="e#700#718#0" expanded="true" />
+            <element signature="e#846#864#0" expanded="true" />
+            <element signature="e#986#1004#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
