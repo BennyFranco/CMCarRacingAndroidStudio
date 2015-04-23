@@ -2,39 +2,39 @@
 <items version="2" >
 
     <item
-        jar="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngine/unspecified/classes.jar"
+        jar="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio-Server/andEngineTexturePackerExtension/unspecified/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="917f4be3f47cf8961360233e5cb943545c25bc1a">
-        <dex dex="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/build/intermediates/pre-dexed/debug/classes-c70d279907c52b5f1d74b5cab8ebe6085f4257da.jar" />
+        sha1="08b40af2170d54ac4136b51d39b120a179a3f58f">
+        <dex dex="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/build/intermediates/pre-dexed/debug/classes-03ad355c99eda2a5b8dc7590345fa0a05806f5e6.jar" />
+    </item>
+    <item
+        jar="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio-Server/andEngine/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="24da9b78a26949ec0e27b206d725212d7160cff5">
+        <dex dex="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/build/intermediates/pre-dexed/debug/classes-461eefa994b333fc83d69a10831e1614147be259.jar" />
     </item>
     <item
         jar="/Users/Benny/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/build/intermediates/pre-dexed/debug/support-v4-19.1.0-ad98ed2aaaafe78447982adb45f419a97a0190ed.jar" />
+        <dex dex="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/build/intermediates/pre-dexed/debug/support-v4-19.1.0-ad98ed2aaaafe78447982adb45f419a97a0190ed.jar" />
     </item>
     <item
-        jar="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngineTexturePackerExtension/unspecified/classes.jar"
+        jar="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio-Server/andEnginePhysicsBox2DExtension/unspecified/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="c7f42eea59754348bd67eb3fb496a5a62c49c90b">
-        <dex dex="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/build/intermediates/pre-dexed/debug/classes-d849bfb3ce57ed87bcfb4a2defef0997340259a2.jar" />
+        sha1="e4addd6ced59944c8fb183cae1688eeb6ed90306">
+        <dex dex="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/build/intermediates/pre-dexed/debug/classes-31b67f44c8c1ad6a053b83fad2c953fbcad40093.jar" />
     </item>
     <item
-        jar="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEnginePhysicsBox2DExtension/unspecified/classes.jar"
+        jar="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio-Server/andEngineMultiplayerExtension/unspecified/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="6e989501be15604288208db2e924d15e98d7d23a">
-        <dex dex="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/build/intermediates/pre-dexed/debug/classes-f3d29458bcc6fe872ca77370a079732909d5a548.jar" />
-    </item>
-    <item
-        jar="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngineMultiplayerExtension/unspecified/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d82448e42796ae1a4bb828628c05a6766788c46f">
-        <dex dex="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/build/intermediates/pre-dexed/debug/classes-18e963477f24feab8ef4683c3b25df8180f4406d.jar" />
+        sha1="59f8cc036154b909983bd536902cf85534401ffb">
+        <dex dex="/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/build/intermediates/pre-dexed/debug/classes-37d3a495cbd84e332c417bbadbd2e917464cd055.jar" />
     </item>
 
 </items>

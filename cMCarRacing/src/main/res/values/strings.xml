@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">CMCarRacing</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
      <!-- Example-Groups -->
@@ -109,14 +108,9 @@
 	<string name="example_benchmark_sprite">Sprite Benchmark</string>
 	<string name="example_benchmark_tickertext">TickerText Benchmark</string>
 
-	<!-- Games -->
-	<string name="example_game_pong">Pong (Multiplayer)</string>
-	<string name="example_game_snake">Snake</string>
-	<string name="example_game_racer">Racer</string>
 
 	<!-- Apps -->
-	<string name="example_app_cityradar">CityRadar</string>
-	
+
 	<string name="btn_get_involved_caption">Open Source - Get involved...</string>
 
     <string name="dialog_device_not_supported_title">Unsupported Device detected!</string>
@@ -139,5 +133,4 @@
 	<string name="tv_xmllayoutexample_above">You can put <b>one</b> <i>AndEngine</i> View into any Activity.</string>
 	<string name="tv_xmllayoutexample_below">Lorem ipsum dolor sit amat...</string>
 
-	<string name="textbreakexample_text_default">Hello, World!</string>
 </resources>
