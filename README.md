@@ -6,3 +6,6 @@ Ejemplo de juego de carreras con AndEngine portado a Android Studio para simulac
   
   <br><b>Plugins:</b>
     <br> -- andEnginePhysicsBox2DExtension.
+    
+    
+Se ha añadido la función multiplayer a través de Sockets, color aleatorio de jugador y autoactivación de una red HotSpot (Solo dispositivos admitidos) para jugar sin necesidad de estar conectado a una red.
