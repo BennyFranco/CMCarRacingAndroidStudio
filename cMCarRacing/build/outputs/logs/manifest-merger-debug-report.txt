@@ -15,13 +15,13 @@ ADDED from AndroidManifest.xml:2:1
 		INJECTED from AndroidManifest.xml:0:0
 uses-sdk
 ADDED from AndroidManifest.xml:7:5
-MERGED from CMCarRacingAndroidStudio-Server:andEngine:unspecified:7:5
-MERGED from CMCarRacingAndroidStudio-Server:andEngineMultiplayerExtension:unspecified:7:5
-MERGED from CMCarRacingAndroidStudio-Server:andEngine:unspecified:7:5
-MERGED from CMCarRacingAndroidStudio-Server:andEnginePhysicsBox2DExtension:unspecified:7:5
-MERGED from CMCarRacingAndroidStudio-Server:andEngine:unspecified:7:5
-MERGED from CMCarRacingAndroidStudio-Server:andEngineTexturePackerExtension:unspecified:7:5
-MERGED from CMCarRacingAndroidStudio-Server:andEngine:unspecified:7:5
+MERGED from CMCarRacingAndroidStudio:andEngine:unspecified:7:5
+MERGED from CMCarRacingAndroidStudio:andEngineMultiplayerExtension:unspecified:7:5
+MERGED from CMCarRacingAndroidStudio:andEngine:unspecified:7:5
+MERGED from CMCarRacingAndroidStudio:andEnginePhysicsBox2DExtension:unspecified:7:5
+MERGED from CMCarRacingAndroidStudio:andEngine:unspecified:7:5
+MERGED from CMCarRacingAndroidStudio:andEngineTexturePackerExtension:unspecified:7:5
+MERGED from CMCarRacingAndroidStudio:andEngine:unspecified:7:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:9:9
 		INJECTED from AndroidManifest.xml:0:0

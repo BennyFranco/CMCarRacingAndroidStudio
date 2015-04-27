@@ -33,4 +33,4 @@
 			android:textSize="20sp"
 			android:text="@string/tv_xmllayoutexample_below"/>
 	 </LinearLayout>
-</ScrollView><!-- From: file:/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/src/main/res/layout/xmllayoutexample.xml -->
+</ScrollView><!-- From: file:/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/src/main/res/layout/xmllayoutexample.xml -->

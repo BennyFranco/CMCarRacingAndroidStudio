@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">CMCarRacing</string>
@@ -120,7 +120,7 @@
     <string name="examplegroup_touch">Touch</string>
     <string name="tv_xmllayoutexample_above">You can put <b>one</b> <i>AndEngine</i> View into any Activity.</string>
     <string name="tv_xmllayoutexample_below">Lorem ipsum dolor sit amat...</string>
-    <!-- From: file:/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

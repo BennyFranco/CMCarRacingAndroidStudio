@@ -14,4 +14,4 @@
 		android:layout_height="wrap_content"
 		android:textSize="20sp"
 		android:text="@string/btn_get_involved_caption"/>
- </LinearLayout><!-- From: file:/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio-Server/cMCarRacing/src/main/res/layout/list_examples.xml -->
+ </LinearLayout><!-- From: file:/Users/Benny/AndroidstudioProjects/CMCarRacingAndroidStudio/cMCarRacing/src/main/res/layout/list_examples.xml -->

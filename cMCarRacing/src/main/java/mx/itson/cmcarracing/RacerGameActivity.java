@@ -190,9 +190,9 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
 
     private void initCar(int tag) {
         this.mCar = new TiledSprite(20, 20, CAR_SIZE, CAR_SIZE, this.mVehiclesTextureRegion, this.getVertexBufferObjectManager());
-        this.mCar.setCurrentTileIndex(0);
+        this.mCar.setCurrentTileIndex(randomCar(tag));
         this.mCar.setTag(tag);
-        this.mCar.setColor(randomColor(tag),randomColor(tag),randomColor(tag));
+        //this.mCar.setColor(randomColor(tag),randomColor(tag),randomColor(tag));
 
         final FixtureDef carFixtureDef = PhysicsFactory.createFixtureDef(1, 0.5f, 0.5f);
         this.mCarBody = PhysicsFactory.createBoxBody(this.mPhysicsWorld, this.mCar, BodyType.DynamicBody, carFixtureDef);
@@ -204,11 +204,11 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
         this.mScene.attachChild(this.mCar);
     }
 
-    private int randomColor(int tag){
+    private int randomCar(int tag){
         Random rn = new Random();
         rn.setSeed(tag);
 
-        return rn.nextInt(256);
+        return rn.nextInt(5);
     }
 
     private void initObstacles() {
