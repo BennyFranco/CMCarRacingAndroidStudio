@@ -1,5 +1,8 @@
 package mx.itson.cmcarracing;
 
+import android.content.Context;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.opengl.GLES20;
 import android.os.AsyncTask;
 
@@ -9,6 +12,7 @@ import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
 
 import org.andengine.engine.camera.Camera;
+import org.andengine.engine.camera.hud.HUD;
 import org.andengine.engine.camera.hud.controls.AnalogOnScreenControl;
 import org.andengine.engine.camera.hud.controls.AnalogOnScreenControl.IAnalogOnScreenControlListener;
 import org.andengine.engine.camera.hud.controls.BaseOnScreenControl;
@@ -20,12 +24,17 @@ import org.andengine.entity.scene.Scene;
 import org.andengine.entity.scene.background.Background;
 import org.andengine.entity.sprite.Sprite;
 import org.andengine.entity.sprite.TiledSprite;
+import org.andengine.entity.text.Text;
+import org.andengine.entity.text.TextOptions;
 import org.andengine.entity.util.FPSLogger;
 import org.andengine.extension.physics.box2d.FixedStepPhysicsWorld;
 import org.andengine.extension.physics.box2d.PhysicsConnector;
 import org.andengine.extension.physics.box2d.PhysicsFactory;
 import org.andengine.extension.physics.box2d.PhysicsWorld;
 import org.andengine.extension.physics.box2d.util.Vector2Pool;
+import org.andengine.opengl.font.Font;
+import org.andengine.opengl.font.FontFactory;
+import org.andengine.opengl.texture.ITexture;
 import org.andengine.opengl.texture.TextureOptions;
 import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlas;
 import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlasTextureRegionFactory;
@@ -33,6 +42,7 @@ import org.andengine.opengl.texture.region.ITextureRegion;
 import org.andengine.opengl.texture.region.TiledTextureRegion;
 import org.andengine.opengl.vbo.VertexBufferObjectManager;
 import org.andengine.ui.activity.SimpleBaseGameActivity;
+import org.andengine.util.HorizontalAlign;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -89,7 +99,15 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	private Body mCarBody;
 	private TiledSprite mCar;
 
-    static final int SocketServerPORT = 3389;
+	private Text mHudText;
+	private int score;
+	private int most;
+
+	private Font gameFont;
+
+
+	static final int SocketServerPORT = 3389;
+	private ITexture mScoreFontTexture;
 	// ===========================================================
 	// Constructors
 	// ===========================================================
@@ -112,6 +130,19 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	@Override
 	public void onCreateResources() {
 		BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("gfx/");
+
+		// Inicializar fuentes
+		//final ITexture fontTexture = new BitmapTextureAtlas(this.getTextureManager(),256,256);
+
+		//gameFont = FontFactory.createFromAsset(this.getFontManager(), fontTexture, this.getAssets(), "mariokartds.ttf", 18f, true,Color.WHITE);
+
+		//gameFont= FontFactory.create(this.getFontManager(), this.getTextureManager(), 256, 256, Typeface.create(Typeface.DEFAULT, Typeface.BOLD_ITALIC), 24, Color.WHITE);
+		//gameFont.load();
+		FontFactory.setAssetBasePath("font/");
+
+		ITexture fontTexture5 = new BitmapTextureAtlas(this.getTextureManager(), 256, 256, TextureOptions.BILINEAR);
+		gameFont= FontFactory.createStrokeFromAsset(this.getFontManager(), fontTexture5, this.getAssets(), "mariokartds.ttf", 36, true, Color.WHITE, 2, Color.DKGRAY);
+		gameFont.load();
 
 		this.mVehiclesTexture = new BitmapTextureAtlas(this.getTextureManager(), 128, 16, TextureOptions.BILINEAR);
 		this.mVehiclesTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(this.mVehiclesTexture, this, "vehicles.png", 0, 0, 6, 1);
@@ -138,8 +169,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 		this.mEngine.registerUpdateHandler(new FPSLogger());
 
 		this.mScene = new Scene();
-		this.mScene.setBackground(new Background(0, 0, 0));
-
+		this.mScene.setBackground(new Background(0, 0, 255));
 		this.mPhysicsWorld = new FixedStepPhysicsWorld(30, new Vector2(0, 0), false, 8, 1);
 
 //		this.initRacetrack();
@@ -148,7 +178,10 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 //		this.initObstacles();
 		this.initOnScreenControls();
 
+
 		this.mScene.registerUpdateHandler(this.mPhysicsWorld);
+
+
 
 		return this.mScene;
 	}
@@ -303,6 +336,17 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 		//		analogOnScreenControl.getControlKnob().setScale(0.75f);
 		analogOnScreenControl.refreshControlKnobPosition();
 
+		//create HUD for score
+		HUD gameHUD = new HUD();
+		// CREATE SCORE TEXT
+		mHudText = new Text(CAMERA_WIDTH/2, 0, gameFont, "0123456789", new TextOptions(HorizontalAlign.LEFT), this.getVertexBufferObjectManager());
+		mHudText.setText("0");
+		mHudText.setX((CAMERA_WIDTH - mHudText.getWidth()) / 2);
+		//mHudText.setVisible(false);
+
+		gameHUD.attachChild(mHudText);
+		mCamera.setHUD(gameHUD);
+
 		this.mScene.setChildScene(analogOnScreenControl);
 	}
 
@@ -435,6 +479,13 @@ public class GameControlActivity extends SimpleBaseGameActivity {
         return hc;
     }
 
+	public int getMaxScore() {
+		return getPreferences(Context.MODE_PRIVATE).getInt("maxScore", 0);
+	}
+
+	public void setMaxScore(int maxScore) {
+		getPreferences(Context.MODE_PRIVATE).edit().putInt("maxScore", maxScore).commit();
+	}
 	
 	// ===========================================================
 	// Inner and Anonymous Classes

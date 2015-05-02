@@ -184,7 +184,6 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
     public void onGameCreated() {
         Thread socketServerThread = new Thread(new SocketServerThread());
         socketServerThread.start();
-
     }
 
 
@@ -391,8 +390,8 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
             }
         } catch (SocketException e) {
             // TODO Auto-generated catch block
-            e.printStackTrace();
-            ip += "Algo paso! " + e.toString() + "\n";
+            //e.printStackTrace();
+            //ip += "Algo paso! " + e.toString() + "\n";
         }
         return ip;
     }
@@ -446,7 +445,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                         accion=json.getString("accion");
                     } catch (JSONException e1) {
                         // TODO Auto-generated catch block
-                        e1.printStackTrace();
+                        //e1.printStackTrace();
                     }
                     RacerGameActivity.this.runOnUiThread(new Runnable() {
                         TiledSprite tempCar=null;
@@ -468,7 +467,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                                        tempCar=(TiledSprite) mScene.getChildByTag(tag);
 
                                 } catch (JSONException e) {
-                                    e.printStackTrace();
+                                    //e.printStackTrace();
                                 }
 
                                 final Body carBody = listaCarritos.get(tag);
@@ -488,7 +487,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                                    mScene.detachChild(tag);
 
                                 } catch (JSONException e) {
-                                    e.printStackTrace();
+                                    //e.printStackTrace();
                                 }
                             }
 
@@ -499,15 +498,14 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                         mainObj.put("canciones", jsonArreglo);
                     } catch (JSONException e) {
                         // TODO Auto-generated catch block
-                        e.printStackTrace();
+                       //e.printStackTrace();
                     }
                     dataOutputStream.writeUTF(mainObj.toString());
                 }
 
             } catch (IOException e) {
                 // TODO Auto-generated catch block
-                e.printStackTrace();
-                final String errMsg = e.toString();
+                //e.printStackTrace();
                 RacerGameActivity.this.runOnUiThread(new Runnable() {
 
                     @Override
@@ -522,7 +520,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
 
                     } catch (IOException e) {
                         // TODO Auto-generated catch block
-                        e.printStackTrace();
+                        //e.printStackTrace();
                     }
                 }
 
@@ -531,7 +529,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                         dataInputStream.close();
                     } catch (IOException e) {
                         // TODO Auto-generated catch block
-                        e.printStackTrace();
+                        //e.printStackTrace();
                     }
                 }
 
@@ -540,7 +538,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                         dataOutputStream.close();
                     } catch (IOException e) {
                         // TODO Auto-generated catch block
-                        e.printStackTrace();
+                        //e.printStackTrace();
                     }
                 }
             }
