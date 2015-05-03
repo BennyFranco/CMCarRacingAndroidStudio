@@ -11,6 +11,8 @@ import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
 
+import org.andengine.audio.music.Music;
+import org.andengine.audio.music.MusicFactory;
 import org.andengine.engine.camera.Camera;
 import org.andengine.engine.camera.hud.HUD;
 import org.andengine.engine.camera.hud.controls.AnalogOnScreenControl;
@@ -110,7 +112,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	private int indexCar;
 
 	private Font gameFont;
-
+	private Music mMusic;
 
 	static final int SocketServerPORT = 3389;
 	private ITexture mScoreFontTexture;
@@ -129,8 +131,10 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	@Override
 	public EngineOptions onCreateEngineOptions() {
 		this.mCamera = new Camera(0, 0, CAMERA_WIDTH, CAMERA_HEIGHT);
+		EngineOptions eo = new  EngineOptions(true, ScreenOrientation.LANDSCAPE_FIXED, new RatioResolutionPolicy(CAMERA_WIDTH, CAMERA_HEIGHT), this.mCamera);
+		eo.getAudioOptions().setNeedsMusic(true);
 
-		return new EngineOptions(true, ScreenOrientation.LANDSCAPE_FIXED, new RatioResolutionPolicy(CAMERA_WIDTH, CAMERA_HEIGHT), this.mCamera);
+		return eo;
 	}
 
 	@Override
@@ -161,6 +165,15 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 		this.mBoxTexture = new BitmapTextureAtlas(this.getTextureManager(), 32, 32, TextureOptions.BILINEAR);
 		this.mBoxTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(this.mBoxTexture, this, "box.png", 0, 0);
 		this.mBoxTexture.load();
+
+		MusicFactory.setAssetBasePath("mfx/");
+		try {
+			mMusic = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bgmusic33.ogg");
+			mMusic.play();
+			mMusic.setLooping(true);
+		} catch (final IOException e) {
+			Debug.e(e);
+		}
 	}
 
 	@Override
