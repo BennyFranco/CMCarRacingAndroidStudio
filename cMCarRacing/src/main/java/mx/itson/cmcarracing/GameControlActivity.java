@@ -44,6 +44,7 @@ import org.andengine.opengl.vbo.VertexBufferObjectManager;
 import org.andengine.ui.activity.SimpleBaseGameActivity;
 import org.andengine.util.HorizontalAlign;
 import org.andengine.util.debug.Debug;
+import org.andengine.util.math.MathUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -52,6 +53,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.Random;
 
 /**
  * (c) 2010 Nicolas Gramlich
@@ -68,7 +70,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	private static final int RACETRACK_WIDTH = 64;
 
 	private static final int OBSTACLE_SIZE = 16;
-	private static final int CAR_SIZE = 16;
+	private static final int CAR_SIZE = 64;
 
 	private static final int CAMERA_WIDTH = RACETRACK_WIDTH * 5;
 	private static final int CAMERA_HEIGHT = RACETRACK_WIDTH * 3;
@@ -102,8 +104,10 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	private TiledSprite mCar;
 
 	private Text mHudText;
-	private int mScore=100;
+	private double mScore=100;
 	private int most;
+
+	private int indexCar;
 
 	private Font gameFont;
 
@@ -170,9 +174,9 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 
 //		this.initRacetrack();
 //		this.initRacetrackBorders();
-//		this.initCar();
 //		this.initObstacles();
 		this.initOnScreenControls();
+		this.initCar(carHashCode);
 
 
 		this.mScene.registerUpdateHandler(this.mPhysicsWorld);
@@ -180,6 +184,21 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 
 
 		return this.mScene;
+	}
+
+	private void initCar(int tag) {
+		this.mCar = new TiledSprite(CAMERA_WIDTH-96, 80, CAR_SIZE, CAR_SIZE, this.mVehiclesTextureRegion, this.getVertexBufferObjectManager());
+		indexCar=randomCar(this.hashCode(String.valueOf(Math.random())));
+		this.mCar.setCurrentTileIndex(indexCar);
+		this.mCar.setTag(tag);
+
+		final FixtureDef carFixtureDef = PhysicsFactory.createFixtureDef(1, 0.5f, 0.5f);
+		this.mCarBody = PhysicsFactory.createBoxBody(this.mPhysicsWorld, this.mCar, BodyType.DynamicBody, carFixtureDef);
+		this.mCarBody.setUserData(tag);
+
+		this.mPhysicsWorld.registerPhysicsConnector(new PhysicsConnector(this.mCar, this.mCarBody, true, false));
+
+		this.mScene.attachChild(this.mCar);
 	}
 
 	@Override
@@ -240,34 +259,23 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 				JSONObject json = new JSONObject(response);
 				String accion = json.getString("accion");
 				Debug.d("JSON", json.toString());
-
+				//if(accion==""){mScore+=0.5;}
 				try{
-					mScore = json.getInt("Score");
+					mScore = json.getDouble("Score");
 					Debug.d("SCORE: ", String.valueOf(mScore));
 					//create HUD for score
 					HUD gameHUD = new HUD();
 					// CREATE SCORE TEXT
-					mHudText.setText("Life: "+mScore);
+					mScene.setBackground(new Background(255, 0, 0));
+					mHudText.setText("Life: " + mScore);
 					mHudText.setX((CAMERA_WIDTH - mHudText.getWidth()) / 2);
 					//mHudText.setVisible(false);
-
 					gameHUD.attachChild(mHudText);
 					mCamera.setHUD(gameHUD);
-				}catch(Exception e){}
-				/*if(accion=="uScore") {
-					mScore = json.getInt("Score");
-					//create HUD for score
-					HUD gameHUD = new HUD();
-					// CREATE SCORE TEXT
-					mHudText.setText("Life: "+mScore);
-					mHudText.setX((CAMERA_WIDTH - mHudText.getWidth()) / 2);
-					//mHudText.setVisible(false);
-
-					gameHUD.attachChild(mHudText);
+					mScene.setBackground(new Background(0, 0, 0));
 					mCamera.setHUD(gameHUD);
-					Debug.d("SCORE: ", String.valueOf(mScore));
-				}*/
-            } catch (UnknownHostException e) {
+				}catch(Exception e) {}
+			} catch (UnknownHostException e) {
                 // TODO Auto-generated catch block
                 //e.printStackTrace();
                 response = "UnknownHostException: " + e.toString();
@@ -337,6 +345,8 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 
 
 				final float rotationInRad = (float)Math.atan2(-pValueX, pValueY);
+
+				mCar.setRotation(MathUtils.radToDeg(rotationInRad));
                 JSONObject json= new JSONObject();
                 try {
                     json.put("accion","movimiento");
@@ -345,6 +355,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
                     json.put("rotacion",rotationInRad);
                     json.put("tag",carHashCode);
 					json.put("score",mScore);
+					json.put("indexCar", indexCar);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -514,6 +525,13 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 
 	public void setMaxScore(int maxScore) {
 		getPreferences(Context.MODE_PRIVATE).edit().putInt("maxScore", maxScore).commit();
+	}
+
+	private int randomCar(int tag){
+		Random rn = new Random();
+		rn.setSeed(tag);
+
+		return rn.nextInt(5);
 	}
 	
 	// ===========================================================
