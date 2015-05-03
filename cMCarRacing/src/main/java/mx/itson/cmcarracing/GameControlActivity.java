@@ -43,6 +43,7 @@ import org.andengine.opengl.texture.region.TiledTextureRegion;
 import org.andengine.opengl.vbo.VertexBufferObjectManager;
 import org.andengine.ui.activity.SimpleBaseGameActivity;
 import org.andengine.util.HorizontalAlign;
+import org.andengine.util.debug.Debug;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -55,8 +56,9 @@ import java.net.UnknownHostException;
 /**
  * (c) 2010 Nicolas Gramlich
  * (c) 2011 Zynga
+ * (c) 2015 Franco, B.; Parra, M.; Calderon, R. F.; Ramos, J. M.
  *
- * @author Nicolas Gramlich
+ * @author Franco, B.; Parra, M.; Calderon, R. F.; Ramos, J. M.
  * @since 22:43:20 - 15.07.2010
  */
 public class GameControlActivity extends SimpleBaseGameActivity {
@@ -100,7 +102,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	private TiledSprite mCar;
 
 	private Text mHudText;
-	private int score=100;
+	private int mScore=100;
 	private int most;
 
 	private Font gameFont;
@@ -235,25 +237,57 @@ public class GameControlActivity extends SimpleBaseGameActivity {
                     dataOutputStream.writeUTF(msgToServer);
                 }
                 response = dataInputStream.readUTF();
+				JSONObject json = new JSONObject(response);
+				String accion = json.getString("accion");
+				Debug.d("JSON", json.toString());
+
+				try{
+					mScore = json.getInt("Score");
+					Debug.d("SCORE: ", String.valueOf(mScore));
+					//create HUD for score
+					HUD gameHUD = new HUD();
+					// CREATE SCORE TEXT
+					mHudText.setText("Life: "+mScore);
+					mHudText.setX((CAMERA_WIDTH - mHudText.getWidth()) / 2);
+					//mHudText.setVisible(false);
+
+					gameHUD.attachChild(mHudText);
+					mCamera.setHUD(gameHUD);
+				}catch(Exception e){}
+				/*if(accion=="uScore") {
+					mScore = json.getInt("Score");
+					//create HUD for score
+					HUD gameHUD = new HUD();
+					// CREATE SCORE TEXT
+					mHudText.setText("Life: "+mScore);
+					mHudText.setX((CAMERA_WIDTH - mHudText.getWidth()) / 2);
+					//mHudText.setVisible(false);
+
+					gameHUD.attachChild(mHudText);
+					mCamera.setHUD(gameHUD);
+					Debug.d("SCORE: ", String.valueOf(mScore));
+				}*/
             } catch (UnknownHostException e) {
                 // TODO Auto-generated catch block
-                e.printStackTrace();
+                //e.printStackTrace();
                 response = "UnknownHostException: " + e.toString();
                 setResult(RESULT_CANCELED);
                 finish();
             } catch (IOException e) {
                 // TODO Auto-generated catch block
-                e.printStackTrace();
+                //e.printStackTrace();
                 response = "IOException: " + e.toString();
                 setResult(RESULT_CANCELED);
                 finish();
-            } finally {
+            } catch (JSONException e) {
+				e.printStackTrace();
+			} finally {
                 if (socket != null) {
                     try {
                         socket.close();
                     } catch (IOException e) {
                         // TODO Auto-generated catch block
-                        e.printStackTrace();
+                       // e.printStackTrace();
                     }
                 }
 
@@ -262,7 +296,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
                         dataOutputStream.close();
                     } catch (IOException e) {
                         // TODO Auto-generated catch block
-                        e.printStackTrace();
+						//e.printStackTrace();
                     }
                 }
 
@@ -271,7 +305,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
                         dataInputStream.close();
                     } catch (IOException e) {
                         // TODO Auto-generated catch block
-                        e.printStackTrace();
+                       // e.printStackTrace();
                     }
                 }
             }
@@ -310,6 +344,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
                     json.put("velocidady",velocity.y);
                     json.put("rotacion",rotationInRad);
                     json.put("tag",carHashCode);
+					json.put("score",mScore);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -334,7 +369,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 		HUD gameHUD = new HUD();
 		// CREATE SCORE TEXT
 		mHudText = new Text(CAMERA_WIDTH/2, 0, gameFont, "0123456789", new TextOptions(HorizontalAlign.LEFT), this.getVertexBufferObjectManager());
-		mHudText.setText("Life: "+score);
+		mHudText.setText("Life: "+mScore);
 		mHudText.setX((CAMERA_WIDTH - mHudText.getWidth()) / 2);
 		//mHudText.setVisible(false);
 

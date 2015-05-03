@@ -112,6 +112,9 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
     private Body mCarBody;
     private TiledSprite mCar;
 
+    private TreeMap<Integer,Body> listaCarritos =  new TreeMap<Integer, Body>();
+    private TreeMap<Integer, Integer> listaScore = new TreeMap<Integer, Integer>();
+
 
     // FUENTE
 
@@ -365,13 +368,27 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
             {
                 final Fixture x1 = contact.getFixtureA();
                 final Fixture x2 = contact.getFixtureB();
-                /*if(x1.getUserData()=="bax"||x2.getUserData()=="bax"){
-                    Debug.d("BAX COLLISION");
-                }else{
-                    Debug.d("COLLISION NULL");
-                }*/
+                if(x1.getBody().getUserData()=="bax"||x2.getBody().getUserData()=="bax"){
+                    Debug.d("BAX COLLISION", x1.getBody().getUserData() + " " + x2.getBody().getUserData());
+                    int score=0;
+                    /*try{
+                        score = (listaScore.get(Integer.parseInt((String) x1.getBody().getUserData()))-1);
+                        listaScore.put((Integer) x1.getBody().getUserData(),score);
+                    }catch (NumberFormatException  nfe){}catch(ClassCastException cce){}*/
+                    //if(x1.getBody().getUserData()!=null || x2.getBody().getUserData()!=null){
+                    try {
+                        if(x2.getBody().getUserData()!="bax") {
+                            score = listaScore.get(x2.getBody().getUserData()) - 1;
+                            listaScore.remove(x2.getBody().getUserData());
+                            listaScore.put((Integer) x2.getBody().getUserData(), score);
+                        }
+                    }catch(NullPointerException npe){} catch(NumberFormatException nfe){}
+                    //}
 
-                Debug.d("COLLISION", x1.getBody().getUserData() + " " + x2.getBody().getUserData());
+                    Debug.d("SCORE", String.valueOf(score));
+                }else{
+                    Debug.d("COLLISION", x1.getBody().getUserData() + " " + x2.getBody().getUserData());
+                }
 
             }
 
@@ -445,7 +462,6 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
     }
 
 
-    TreeMap<Integer,Body> listaCarritos =  new TreeMap<Integer, Body>();
 
     private class SocketServerThread extends Thread {
         String accion="";
@@ -461,7 +477,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
         public void run() {
             Socket socket = null;
             DataInputStream dataInputStream = null;
-            DataOutputStream dataOutputStream = null;
+            //DataOutputStream dataOutputStream = null;
 
             try {
                 serverSocket = new ServerSocket(SocketServerPORT);
@@ -477,13 +493,14 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                     socket = serverSocket.accept();
                     dataInputStream = new DataInputStream(
                             socket.getInputStream());
-                    dataOutputStream = new DataOutputStream(
+                    final DataOutputStream  dataOutputStream = new DataOutputStream(
                             socket.getOutputStream());
                     String messageFromClient = "";
 
                     // If no message sent from client, this code will block the
                     // program
                     messageFromClient = dataInputStream.readUTF();
+
 
                     count++;
                     message = messageFromClient;
@@ -497,6 +514,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                     }
                     RacerGameActivity.this.runOnUiThread(new Runnable() {
                         TiledSprite tempCar=null;
+                        int tempScore=0;
                         @Override
                         public void run() {
                             Log.v("algo",json.toString());
@@ -508,11 +526,14 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                                     rotacion = json.getDouble("rotacion");
                                     tag = json.getInt("tag");
 
+
                                     if(mScene.getChildByTag(tag)==null) {
                                         initCar(tag);
-                                     }
-
-                                       tempCar=(TiledSprite) mScene.getChildByTag(tag);
+                                        tempScore = json.getInt("score");
+                                        listaScore.put(tag, tempScore);
+                                    }
+                                    tempScore = json.getInt("score");
+                                    tempCar=(TiledSprite) mScene.getChildByTag(tag);
 
                                 } catch (JSONException e) {
                                     //e.printStackTrace();
@@ -527,6 +548,26 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                                 carBody.setTransform(carBody.getWorldCenter(), (float)rotacion);
 
                                 tempCar.setRotation(MathUtils.radToDeg((float)rotacion));
+                                if(tempScore!=listaScore.get(tag)) {
+                                    JSONObject jsonScore = new JSONObject();
+                                    try {
+                                        jsonScore.put("accion", "uScore");
+                                        jsonScore.put("Score", listaScore.get(tag));
+                                        dataOutputStream.writeUTF(jsonScore.toString());
+                                    } catch (JSONException e) {
+                                        //e.printStackTrace();
+                                    } catch (IOException ioe) {
+                                    }
+
+                                    /*if (dataOutputStream != null) {
+                                        try {
+                                            dataOutputStream.close();
+                                        } catch (IOException e) {
+                                            // TODO Auto-generated catch block
+                                            //e.printStackTrace();
+                                        }
+                                    }*/
+                                }
 
                             }else if(accion.equals("desconexion")){
                                 try {
@@ -543,12 +584,21 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                     });
                     JSONObject mainObj = new JSONObject();
                     try {
-                        mainObj.put("canciones", jsonArreglo);
+                        mainObj.put("accion", "");
                     } catch (JSONException e) {
                         // TODO Auto-generated catch block
                        //e.printStackTrace();
                     }
                     dataOutputStream.writeUTF(mainObj.toString());
+
+                    if (dataOutputStream != null) {
+                        try {
+                            dataOutputStream.close();
+                        } catch (IOException e) {
+                            // TODO Auto-generated catch block
+                            //e.printStackTrace();
+                        }
+                    }
                 }
 
             } catch (IOException e) {
@@ -581,14 +631,14 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                     }
                 }
 
-                if (dataOutputStream != null) {
+                /*if (dataOutputStream != null) {
                     try {
                         dataOutputStream.close();
                     } catch (IOException e) {
                         // TODO Auto-generated catch block
                         //e.printStackTrace();
                     }
-                }
+                }*/
             }
         }
 
