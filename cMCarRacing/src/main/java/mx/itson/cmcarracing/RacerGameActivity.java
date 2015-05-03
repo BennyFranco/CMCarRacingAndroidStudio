@@ -15,6 +15,10 @@ import java.util.Map;
 import java.util.Random;
 import java.util.TreeMap;
 
+import org.andengine.audio.music.Music;
+import org.andengine.audio.music.MusicFactory;
+import org.andengine.audio.sound.Sound;
+import org.andengine.audio.sound.SoundFactory;
 import org.andengine.engine.camera.Camera;
 import org.andengine.engine.options.EngineOptions;
 import org.andengine.engine.options.ScreenOrientation;
@@ -116,6 +120,16 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
     private TreeMap<Integer,Body> listaCarritos =  new TreeMap<Integer, Body>();
     private TreeMap<Integer, Double> listaScore = new TreeMap<Integer, Double>();
 
+    private Music mMusic;
+    private Music bg1;
+    private Music bg2;
+    private Music bg3;
+    private Music bg4;
+    private Music bg5;
+
+    private Sound punch;
+    private Sound smashing;
+
 
     // FUENTE
 
@@ -139,8 +153,11 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
     public EngineOptions onCreateEngineOptions() {
         this.mCamera = new Camera(0, 0, CAMERA_WIDTH, CAMERA_HEIGHT);
         turnOnOffHotspot(getApplicationContext(),true);
-        Toast.makeText(getApplicationContext(),getIpAddress(),Toast.LENGTH_LONG).show();
-        return new EngineOptions(true, ScreenOrientation.LANDSCAPE_FIXED, new RatioResolutionPolicy(CAMERA_WIDTH, CAMERA_HEIGHT), this.mCamera);
+        Toast.makeText(getApplicationContext(),"En linea",Toast.LENGTH_LONG).show();
+        EngineOptions eo = new  EngineOptions(true, ScreenOrientation.LANDSCAPE_FIXED, new RatioResolutionPolicy(CAMERA_WIDTH, CAMERA_HEIGHT), this.mCamera);
+        eo.getAudioOptions().setNeedsMusic(true).setNeedsSound(true);
+
+        return eo;
     }
 
     @Override
@@ -168,6 +185,26 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
         this.mBoxTexture = new BitmapTextureAtlas(this.getTextureManager(), 32, 32, TextureOptions.BILINEAR);
         this.mBoxTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(this.mBoxTexture, this, "box.png", 0, 0);
         this.mBoxTexture.load();
+
+        SoundFactory.setAssetBasePath("mfx/");
+        try {
+            punch = SoundFactory.createSoundFromAsset(getEngine().getSoundManager(), this, "punch.ogg");
+            smashing = SoundFactory.createSoundFromAsset(getEngine().getSoundManager(), this, "smashing.ogg");
+        } catch (final IOException e) {
+            Debug.e(e);
+        }
+
+        MusicFactory.setAssetBasePath("mfx/");
+        try {
+            bg1 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg1.ogg");
+            bg2 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg2.ogg");
+            bg3 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg3.ogg");
+            bg4 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg4.ogg");
+            bg5 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg5.ogg");
+            //mMusic.setLooping(true);
+        } catch (final IOException e) {
+            Debug.e(e);
+        }
     }
 
 
@@ -382,10 +419,12 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                             score = listaScore.get(x2.getBody().getUserData()) - 1;
                             listaScore.remove(x2.getBody().getUserData());
                             listaScore.put((Integer) x2.getBody().getUserData(), score);
+                            punch.play();
                         }else if(x1.getBody().getUserData()!="bax"&&x2.getBody().getUserData()!="bax"){
                             score = listaScore.get(x2.getBody().getUserData()) - 1.5;
                             listaScore.remove(x2.getBody().getUserData());
                             listaScore.put((Integer) x2.getBody().getUserData(), score);
+                            smashing.play();
                         }
                     }catch(NullPointerException npe){} catch(NumberFormatException nfe){}
 

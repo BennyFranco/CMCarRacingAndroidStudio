@@ -125,6 +125,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 
 	private Sound punch;
 	private Sound smashing;
+	private Sound vehicle;
 
 	static final int SocketServerPORT = 3389;
 	private ITexture mScoreFontTexture;
@@ -182,6 +183,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 		try {
 			punch = SoundFactory.createSoundFromAsset(getEngine().getSoundManager(), this, "punch.ogg");
 			smashing = SoundFactory.createSoundFromAsset(getEngine().getSoundManager(), this, "smashing.ogg");
+			vehicle = SoundFactory.createSoundFromAsset(getEngine().getSoundManager(), this, "vehicle177.ogg");
 		} catch (final IOException e) {
 			Debug.e(e);
 		}
@@ -194,13 +196,32 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 			bg4 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg4.ogg");
 			bg5 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg5.ogg");
 			//mMusic.setLooping(true);
-			bg1.play();
-			bg1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-				@Override
-				public void onCompletion(MediaPlayer mediaPlayer) {
-					bg5.play();
-				}
-			});
+				bg1.play();
+				bg1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+					@Override
+					public void onCompletion(MediaPlayer mediaPlayer) {
+						bg2.play();
+						bg2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+							@Override
+							public void onCompletion(MediaPlayer mediaPlayer) {
+								bg3.play();
+								bg3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+									@Override
+									public void onCompletion(MediaPlayer mediaPlayer) {
+										bg4.play();
+										bg4.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+											@Override
+											public void onCompletion(MediaPlayer mediaPlayer) {
+												bg5.play();
+												bg5.setLooping(true);
+											}
+										});
+									}
+								});
+							}
+						});
+					}
+				});
 		} catch (final IOException e) {
 			Debug.e(e);
 		}
@@ -385,8 +406,6 @@ public class GameControlActivity extends SimpleBaseGameActivity {
                 }
 
 				final Vector2 velocity = Vector2Pool.obtain(pValueX * 5, pValueY * 5);
-
-
 				final float rotationInRad = (float)Math.atan2(-pValueX, pValueY);
 
 				mCar.setRotation(MathUtils.radToDeg(rotationInRad));
