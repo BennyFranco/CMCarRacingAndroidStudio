@@ -111,9 +111,10 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
 
     private Body mCarBody;
     private TiledSprite mCar;
+    private int indexCar;
 
     private TreeMap<Integer,Body> listaCarritos =  new TreeMap<Integer, Body>();
-    private TreeMap<Integer, Integer> listaScore = new TreeMap<Integer, Integer>();
+    private TreeMap<Integer, Double> listaScore = new TreeMap<Integer, Double>();
 
 
     // FUENTE
@@ -198,18 +199,22 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
 
 
     private void initCar(int tag) {
-        this.mCar = new TiledSprite(20, 20, CAR_SIZE, CAR_SIZE, this.mVehiclesTextureRegion, this.getVertexBufferObjectManager());
-        this.mCar.setCurrentTileIndex(randomCar(tag));
-        this.mCar.setTag(tag);
+        try {
+            this.mCar = new TiledSprite(20, 20, CAR_SIZE, CAR_SIZE, this.mVehiclesTextureRegion, this.getVertexBufferObjectManager());
+            this.mCar.setCurrentTileIndex(indexCar);
+            this.mCar.setTag(tag);
 
-        final FixtureDef carFixtureDef = PhysicsFactory.createFixtureDef(1, 0.5f, 0.5f);
-        this.mCarBody = PhysicsFactory.createBoxBody(this.mPhysicsWorld, this.mCar, BodyType.DynamicBody, carFixtureDef);
-        this.mCarBody.setUserData(tag);
+            final FixtureDef carFixtureDef = PhysicsFactory.createFixtureDef(1, 0.5f, 0.5f);
+            this.mCarBody = PhysicsFactory.createBoxBody(this.mPhysicsWorld, this.mCar, BodyType.DynamicBody, carFixtureDef);
+            this.mCarBody.setUserData(tag);
 
-        this.mPhysicsWorld.registerPhysicsConnector(new PhysicsConnector(this.mCar, this.mCarBody, true, false));
+            this.mPhysicsWorld.registerPhysicsConnector(new PhysicsConnector(this.mCar, this.mCarBody, true, false));
 
-        this.listaCarritos.put(tag,mCarBody);
-        this.mScene.attachChild(this.mCar);
+            this.listaCarritos.put(tag, mCarBody);
+            this.mScene.attachChild(this.mCar);
+        }catch(NullPointerException e){
+            Toast.makeText(getApplicationContext(),"ERROR, reiniciar el juego por favor. "+e.getMessage(),Toast.LENGTH_LONG);
+        }
     }
 
     private int randomCar(int tag){
@@ -370,20 +375,19 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                 final Fixture x2 = contact.getFixtureB();
                 if(x1.getBody().getUserData()=="bax"||x2.getBody().getUserData()=="bax"){
                     Debug.d("BAX COLLISION", x1.getBody().getUserData() + " " + x2.getBody().getUserData());
-                    int score=0;
-                    /*try{
-                        score = (listaScore.get(Integer.parseInt((String) x1.getBody().getUserData()))-1);
-                        listaScore.put((Integer) x1.getBody().getUserData(),score);
-                    }catch (NumberFormatException  nfe){}catch(ClassCastException cce){}*/
-                    //if(x1.getBody().getUserData()!=null || x2.getBody().getUserData()!=null){
+                    double score=0;
+
                     try {
                         if(x2.getBody().getUserData()!="bax") {
                             score = listaScore.get(x2.getBody().getUserData()) - 1;
                             listaScore.remove(x2.getBody().getUserData());
                             listaScore.put((Integer) x2.getBody().getUserData(), score);
+                        }else if(x1.getBody().getUserData()!="bax"&&x2.getBody().getUserData()!="bax"){
+                            score = listaScore.get(x2.getBody().getUserData()) - 1.5;
+                            listaScore.remove(x2.getBody().getUserData());
+                            listaScore.put((Integer) x2.getBody().getUserData(), score);
                         }
                     }catch(NullPointerException npe){} catch(NumberFormatException nfe){}
-                    //}
 
                     Debug.d("SCORE", String.valueOf(score));
                 }else{
@@ -514,7 +518,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                     }
                     RacerGameActivity.this.runOnUiThread(new Runnable() {
                         TiledSprite tempCar=null;
-                        int tempScore=0;
+                        double tempScore=0;
                         @Override
                         public void run() {
                             Log.v("algo",json.toString());
@@ -528,8 +532,9 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
 
 
                                     if(mScene.getChildByTag(tag)==null) {
+                                        indexCar = json.getInt("indexCar");
                                         initCar(tag);
-                                        tempScore = json.getInt("score");
+                                        tempScore = json.getDouble("score");
                                         listaScore.put(tag, tempScore);
                                     }
                                     tempScore = json.getInt("score");
@@ -548,6 +553,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                                 carBody.setTransform(carBody.getWorldCenter(), (float)rotacion);
 
                                 tempCar.setRotation(MathUtils.radToDeg((float)rotacion));
+
                                 if(tempScore!=listaScore.get(tag)) {
                                     JSONObject jsonScore = new JSONObject();
                                     try {
@@ -558,6 +564,8 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                                         //e.printStackTrace();
                                     } catch (IOException ioe) {
                                     }
+
+
 
                                     /*if (dataOutputStream != null) {
                                         try {
