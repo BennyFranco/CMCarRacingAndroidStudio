@@ -100,7 +100,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	private TiledSprite mCar;
 
 	private Text mHudText;
-	private int score;
+	private int score=100;
 	private int most;
 
 	private Font gameFont;
@@ -132,16 +132,10 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 		BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("gfx/");
 
 		// Inicializar fuentes
-		//final ITexture fontTexture = new BitmapTextureAtlas(this.getTextureManager(),256,256);
-
-		//gameFont = FontFactory.createFromAsset(this.getFontManager(), fontTexture, this.getAssets(), "mariokartds.ttf", 18f, true,Color.WHITE);
-
-		//gameFont= FontFactory.create(this.getFontManager(), this.getTextureManager(), 256, 256, Typeface.create(Typeface.DEFAULT, Typeface.BOLD_ITALIC), 24, Color.WHITE);
-		//gameFont.load();
 		FontFactory.setAssetBasePath("font/");
 
 		ITexture fontTexture5 = new BitmapTextureAtlas(this.getTextureManager(), 256, 256, TextureOptions.BILINEAR);
-		gameFont= FontFactory.createStrokeFromAsset(this.getFontManager(), fontTexture5, this.getAssets(), "mariokartds.ttf", 36, true, Color.WHITE, 2, Color.DKGRAY);
+		gameFont= FontFactory.createStrokeFromAsset(this.getFontManager(), fontTexture5, this.getAssets(), "mariokartds.ttf", 24, true, Color.WHITE, 2, Color.WHITE);
 		gameFont.load();
 
 		this.mVehiclesTexture = new BitmapTextureAtlas(this.getTextureManager(), 128, 16, TextureOptions.BILINEAR);
@@ -169,7 +163,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 		this.mEngine.registerUpdateHandler(new FPSLogger());
 
 		this.mScene = new Scene();
-		this.mScene.setBackground(new Background(0, 0, 255));
+		this.mScene.setBackground(new Background(0, 0, 0));
 		this.mPhysicsWorld = new FixedStepPhysicsWorld(30, new Vector2(0, 0), false, 8, 1);
 
 //		this.initRacetrack();
@@ -340,7 +334,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 		HUD gameHUD = new HUD();
 		// CREATE SCORE TEXT
 		mHudText = new Text(CAMERA_WIDTH/2, 0, gameFont, "0123456789", new TextOptions(HorizontalAlign.LEFT), this.getVertexBufferObjectManager());
-		mHudText.setText("0");
+		mHudText.setText("Life: "+score);
 		mHudText.setX((CAMERA_WIDTH - mHudText.getWidth()) / 2);
 		//mHudText.setVisible(false);
 

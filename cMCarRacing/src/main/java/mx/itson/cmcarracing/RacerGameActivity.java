@@ -40,6 +40,7 @@ import org.andengine.opengl.texture.region.ITextureRegion;
 import org.andengine.opengl.texture.region.TiledTextureRegion;
 import org.andengine.opengl.vbo.VertexBufferObjectManager;
 import org.andengine.ui.activity.SimpleBaseGameActivity;
+import org.andengine.util.debug.Debug;
 import org.andengine.util.math.MathUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -56,7 +57,12 @@ import android.widget.Toast;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
+import com.badlogic.gdx.physics.box2d.Contact;
+import com.badlogic.gdx.physics.box2d.ContactImpulse;
+import com.badlogic.gdx.physics.box2d.ContactListener;
+import com.badlogic.gdx.physics.box2d.Fixture;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
+import com.badlogic.gdx.physics.box2d.Manifold;
 
 /**
  * (c) 2010 Nicolas Gramlich
@@ -174,6 +180,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
         this.initRacetrackBorders();
         this.initObstacles();
 
+        this.mPhysicsWorld.setContactListener(this.createContactListener());
         this.mScene.registerUpdateHandler(this.mPhysicsWorld);
         String haha=getIpAddress();
         ip = new Text(0,0,gameFont,haha,100,this.getVertexBufferObjectManager());
@@ -191,15 +198,14 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
         this.mCar = new TiledSprite(20, 20, CAR_SIZE, CAR_SIZE, this.mVehiclesTextureRegion, this.getVertexBufferObjectManager());
         this.mCar.setCurrentTileIndex(randomCar(tag));
         this.mCar.setTag(tag);
-        //this.mCar.setColor(randomColor(tag),randomColor(tag),randomColor(tag));
 
         final FixtureDef carFixtureDef = PhysicsFactory.createFixtureDef(1, 0.5f, 0.5f);
         this.mCarBody = PhysicsFactory.createBoxBody(this.mPhysicsWorld, this.mCar, BodyType.DynamicBody, carFixtureDef);
+        this.mCarBody.setUserData(tag);
 
         this.mPhysicsWorld.registerPhysicsConnector(new PhysicsConnector(this.mCar, this.mCarBody, true, false));
 
         this.listaCarritos.put(tag,mCarBody);
-
         this.mScene.attachChild(this.mCar);
     }
 
@@ -219,11 +225,12 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
 
     private void addObstacle(final float pX, final float pY) {
         final Sprite box = new Sprite(pX, pY, OBSTACLE_SIZE, OBSTACLE_SIZE, this.mBoxTextureRegion, this.getVertexBufferObjectManager());
-
         final FixtureDef boxFixtureDef = PhysicsFactory.createFixtureDef(0.1f, 0.5f, 0.5f);
+        box.setUserData("bax");
         final Body boxBody = PhysicsFactory.createBoxBody(this.mPhysicsWorld, box, BodyType.DynamicBody, boxFixtureDef);
         boxBody.setLinearDamping(10);
         boxBody.setAngularDamping(10);
+        boxBody.setUserData("bax");
 
         this.mPhysicsWorld.registerPhysicsConnector(new PhysicsConnector(box, boxBody, true, true));
 
@@ -348,6 +355,47 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
 
         wifiManager.setWifiEnabled(isTurnToOn);
     }
+
+    private ContactListener createContactListener()
+    {
+        ContactListener contactListener = new ContactListener()
+        {
+            @Override
+            public void beginContact(Contact contact)
+            {
+                final Fixture x1 = contact.getFixtureA();
+                final Fixture x2 = contact.getFixtureB();
+                /*if(x1.getUserData()=="bax"||x2.getUserData()=="bax"){
+                    Debug.d("BAX COLLISION");
+                }else{
+                    Debug.d("COLLISION NULL");
+                }*/
+
+                Debug.d("COLLISION", x1.getBody().getUserData() + " " + x2.getBody().getUserData());
+
+            }
+
+            @Override
+            public void endContact(Contact contact)
+            {
+
+            }
+
+            @Override
+            public void preSolve(Contact contact, Manifold oldManifold)
+            {
+
+            }
+
+            @Override
+            public void postSolve(Contact contact, ContactImpulse impulse)
+            {
+
+            }
+        };
+        return contactListener;
+    }
+
 
 
     // ===========================================================
@@ -474,7 +522,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
 
                                 final Vector2 velocity = new Vector2((float)velocidadx,(float)velocidady);
                                 carBody.setLinearVelocity(velocity);
-                                Vector2Pool.recycle(velocity);
+                                //Vector2Pool.recycle(velocity);
 
                                 carBody.setTransform(carBody.getWorldCenter(), (float)rotacion);
 

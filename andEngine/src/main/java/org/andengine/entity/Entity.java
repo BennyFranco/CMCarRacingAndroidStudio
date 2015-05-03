@@ -1378,9 +1378,11 @@ public class Entity implements IEntity {
 				this.postDraw(pGLState, pCamera);
 
 				{ /* Draw children in front of this Entity. */
-					for(; i < childCount; i++) {
+				try {
+					for (; i < childCount; i++) {
 						children.get(i).onDraw(pGLState, pCamera);
 					}
+				}catch(IndexOutOfBoundsException iobe){}
 				}
 			}
 		}
