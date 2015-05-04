@@ -3,6 +3,7 @@ package mx.itson.cmcarracing;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.opengl.GLES20;
 import android.os.AsyncTask;
 
@@ -13,6 +14,8 @@ import com.badlogic.gdx.physics.box2d.FixtureDef;
 
 import org.andengine.audio.music.Music;
 import org.andengine.audio.music.MusicFactory;
+import org.andengine.audio.sound.Sound;
+import org.andengine.audio.sound.SoundFactory;
 import org.andengine.engine.camera.Camera;
 import org.andengine.engine.camera.hud.HUD;
 import org.andengine.engine.camera.hud.controls.AnalogOnScreenControl;
@@ -106,13 +109,23 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	private TiledSprite mCar;
 
 	private Text mHudText;
-	private double mScore=100;
+	private double mScore=1000;
 	private int most;
 
 	private int indexCar;
 
 	private Font gameFont;
+
 	private Music mMusic;
+	private Music bg1;
+	private Music bg2;
+	private Music bg3;
+	private Music bg4;
+	private Music bg5;
+
+	private Sound punch;
+	private Sound smashing;
+	private Sound vehicle;
 
 	static final int SocketServerPORT = 3389;
 	private ITexture mScoreFontTexture;
@@ -132,7 +145,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	public EngineOptions onCreateEngineOptions() {
 		this.mCamera = new Camera(0, 0, CAMERA_WIDTH, CAMERA_HEIGHT);
 		EngineOptions eo = new  EngineOptions(true, ScreenOrientation.LANDSCAPE_FIXED, new RatioResolutionPolicy(CAMERA_WIDTH, CAMERA_HEIGHT), this.mCamera);
-		eo.getAudioOptions().setNeedsMusic(true);
+		eo.getAudioOptions().setNeedsMusic(true).setNeedsSound(true);
 
 		return eo;
 	}
@@ -166,11 +179,49 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 		this.mBoxTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(this.mBoxTexture, this, "box.png", 0, 0);
 		this.mBoxTexture.load();
 
+		SoundFactory.setAssetBasePath("mfx/");
+		try {
+			punch = SoundFactory.createSoundFromAsset(getEngine().getSoundManager(), this, "punch.ogg");
+			smashing = SoundFactory.createSoundFromAsset(getEngine().getSoundManager(), this, "smashing.ogg");
+			vehicle = SoundFactory.createSoundFromAsset(getEngine().getSoundManager(), this, "vehicle177.ogg");
+		} catch (final IOException e) {
+			Debug.e(e);
+		}
+
 		MusicFactory.setAssetBasePath("mfx/");
 		try {
-			mMusic = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bgmusic33.ogg");
-			mMusic.play();
-			mMusic.setLooping(true);
+			bg1 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg1.ogg");
+			bg2 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg2.ogg");
+			bg3 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg3.ogg");
+			bg4 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg4.ogg");
+			bg5 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg5.ogg");
+			//mMusic.setLooping(true);
+				bg1.play();
+				bg1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+					@Override
+					public void onCompletion(MediaPlayer mediaPlayer) {
+						bg2.play();
+						bg2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+							@Override
+							public void onCompletion(MediaPlayer mediaPlayer) {
+								bg3.play();
+								bg3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+									@Override
+									public void onCompletion(MediaPlayer mediaPlayer) {
+										bg4.play();
+										bg4.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+											@Override
+											public void onCompletion(MediaPlayer mediaPlayer) {
+												bg5.play();
+												bg5.setLooping(true);
+											}
+										});
+									}
+								});
+							}
+						});
+					}
+				});
 		} catch (final IOException e) {
 			Debug.e(e);
 		}
@@ -288,6 +339,11 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 					mScene.setBackground(new Background(0, 0, 0));
 					mCamera.setHUD(gameHUD);
 				}catch(Exception e) {}
+
+				if(mScore<=0){
+					dataInputStream.close();
+					dataOutputStream.close();
+				}
 			} catch (UnknownHostException e) {
                 // TODO Auto-generated catch block
                 //e.printStackTrace();
@@ -355,8 +411,6 @@ public class GameControlActivity extends SimpleBaseGameActivity {
                 }
 
 				final Vector2 velocity = Vector2Pool.obtain(pValueX * 5, pValueY * 5);
-
-
 				final float rotationInRad = (float)Math.atan2(-pValueX, pValueY);
 
 				mCar.setRotation(MathUtils.radToDeg(rotationInRad));
