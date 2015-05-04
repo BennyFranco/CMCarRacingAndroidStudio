@@ -243,7 +243,8 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
 
             final FixtureDef carFixtureDef = PhysicsFactory.createFixtureDef(1, 0.5f, 0.5f);
             this.mCarBody = PhysicsFactory.createBoxBody(this.mPhysicsWorld, this.mCar, BodyType.DynamicBody, carFixtureDef);
-            this.mCarBody.setUserData(tag);
+            this.mCarBody.setUserData(new UserDataCar(tag,"car"));
+
 
             this.mPhysicsWorld.registerPhysicsConnector(new PhysicsConnector(this.mCar, this.mCarBody, true, false));
 
@@ -410,27 +411,36 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
             {
                 final Fixture x1 = contact.getFixtureA();
                 final Fixture x2 = contact.getFixtureB();
+                double score=0;
+                try {
                 if(x1.getBody().getUserData()=="bax"||x2.getBody().getUserData()=="bax"){
                     Debug.d("BAX COLLISION", x1.getBody().getUserData() + " " + x2.getBody().getUserData());
-                    double score=0;
-
-                    try {
-                        if(x2.getBody().getUserData()!="bax") {
-                            score = listaScore.get(x2.getBody().getUserData()) - 1;
-                            listaScore.remove(x2.getBody().getUserData());
-                            listaScore.put((Integer) x2.getBody().getUserData(), score);
+                        if(x1.getBody().getUserData()=="bax"&&((UserDataCar)(x2.getBody().getUserData())).getIdentificador()=="car") {
+                            score = listaScore.get(((UserDataCar) (x2.getBody().getUserData())).getTag()) - 1;
+                            listaScore.remove(((UserDataCar) (x2.getBody().getUserData())).getTag());
+                            listaScore.put(((UserDataCar) (x2.getBody().getUserData())).getTag(), score);
                             punch.play();
-                        }else if(x1.getBody().getUserData()!="bax"&&x2.getBody().getUserData()!="bax"){
-                            score = listaScore.get(x2.getBody().getUserData()) - 1.5;
-                            listaScore.remove(x2.getBody().getUserData());
-                            listaScore.put((Integer) x2.getBody().getUserData(), score);
-                            smashing.play();
+                            Debug.d("SCORE", String.valueOf(score));
                         }
-                    }catch(NullPointerException npe){} catch(NumberFormatException nfe){}
+                }else if(((UserDataCar)(x1.getBody().getUserData())).getIdentificador()=="car"&&((UserDataCar)(x2.getBody().getUserData())).getIdentificador()=="car") {
 
-                    Debug.d("SCORE", String.valueOf(score));
-                }else{
-                    Debug.d("COLLISION", x1.getBody().getUserData() + " " + x2.getBody().getUserData());
+                    score = listaScore.get(((UserDataCar)(x1.getBody().getUserData())).getTag()) - 2;
+                    listaScore.remove(((UserDataCar)(x1.getBody().getUserData())).getTag());
+                    score = listaScore.get(((UserDataCar)(x2.getBody().getUserData())).getTag()) - 2;
+                    listaScore.remove(((UserDataCar)(x2.getBody().getUserData())).getTag());
+                    listaScore.put(((UserDataCar) (x1.getBody().getUserData())).getTag(), score);
+                    listaScore.put(((UserDataCar)(x2.getBody().getUserData())).getTag(), score);
+                    punch.play();
+                    Debug.d("COLLISION", ((UserDataCar) (x1.getBody().getUserData())).getIdentificador() + " " + ((UserDataCar) (x2.getBody().getUserData())).getIdentificador());
+                }
+                }catch(NullPointerException npe){
+                    Debug.e("NullPointerException");
+                }
+                catch(NumberFormatException nfe){
+                    Debug.e("NumberFormatException");
+                }
+                catch(ClassCastException cce){
+                    Debug.e("ClassCastException");
                 }
 
             }
@@ -519,7 +529,7 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
         @Override
         public void run() {
             Socket socket = null;
-            DataInputStream dataInputStream = null;
+           DataInputStream dataInputStream = null;
             //DataOutputStream dataOutputStream = null;
 
             try {
@@ -586,25 +596,27 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                                 final Body carBody = listaCarritos.get(tag);
 
                                 final Vector2 velocity = new Vector2((float)velocidadx,(float)velocidady);
-                                carBody.setLinearVelocity(velocity);
-                                //Vector2Pool.recycle(velocity);
+                                try {
+                                    carBody.setLinearVelocity(velocity);
+                                    //Vector2Pool.recycle(velocity);
 
-                                carBody.setTransform(carBody.getWorldCenter(), (float)rotacion);
+                                    carBody.setTransform(carBody.getWorldCenter(), (float) rotacion);
 
-                                tempCar.setRotation(MathUtils.radToDeg((float)rotacion));
+                                    tempCar.setRotation(MathUtils.radToDeg((float) rotacion));
 
-                                if(tempScore!=listaScore.get(tag)) {
-                                    JSONObject jsonScore = new JSONObject();
-                                    try {
-                                        jsonScore.put("accion", "uScore");
-                                        jsonScore.put("Score", listaScore.get(tag));
-                                        dataOutputStream.writeUTF(jsonScore.toString());
-                                    } catch (JSONException e) {
-                                        //e.printStackTrace();
-                                    } catch (IOException ioe) {
-                                    }
-
-
+                                    if (tempScore != listaScore.get(tag)) {
+                                        if (listaScore.get(tag) <= 0) {
+                                            mScene.detachChild(tag);
+                                        }
+                                        JSONObject jsonScore = new JSONObject();
+                                        try {
+                                            jsonScore.put("accion", "uScore");
+                                            jsonScore.put("Score", listaScore.get(tag));
+                                            dataOutputStream.writeUTF(jsonScore.toString());
+                                        } catch (JSONException e) {
+                                            //e.printStackTrace();
+                                        } catch (IOException ioe) {
+                                        }
 
                                     /*if (dataOutputStream != null) {
                                         try {
@@ -614,6 +626,9 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                                             //e.printStackTrace();
                                         }
                                     }*/
+                                    }
+                                }catch(NullPointerException npe){
+                                    Toast.makeText(getApplicationContext(), "Error, reiniciar el juego por favor", Toast.LENGTH_LONG);
                                 }
 
                             }else if(accion.equals("desconexion")){
@@ -688,8 +703,24 @@ public class RacerGameActivity extends SimpleBaseGameActivity{
                 }*/
             }
         }
+    }
 
+    class UserDataCar{
+        private int tag;
+        private String identificador;
 
+        public UserDataCar(int tag, String identificador){
+            this.tag = tag;
+            this.identificador = identificador;
+        }
+
+        public int getTag(){
+            return this.tag;
+        }
+
+        public String getIdentificador(){
+            return this.identificador;
+        }
     }
 
 }

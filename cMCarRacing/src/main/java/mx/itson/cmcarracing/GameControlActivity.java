@@ -109,7 +109,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	private TiledSprite mCar;
 
 	private Text mHudText;
-	private double mScore=100;
+	private double mScore=1000;
 	private int most;
 
 	private int indexCar;
@@ -339,6 +339,11 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 					mScene.setBackground(new Background(0, 0, 0));
 					mCamera.setHUD(gameHUD);
 				}catch(Exception e) {}
+
+				if(mScore<=0){
+					dataInputStream.close();
+					dataOutputStream.close();
+				}
 			} catch (UnknownHostException e) {
                 // TODO Auto-generated catch block
                 //e.printStackTrace();

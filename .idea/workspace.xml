@@ -19,8 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c38db128-a824-4811-8553-66d8f15334a2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/assets/debug/mfx/bgmusic33.ogg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/classes/debug/mx/itson/cmcarracing/GameControlActivity$1.class" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/classes/debug/mx/itson/cmcarracing/GameControlActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/classes/debug/mx/itson/cmcarracing/GameControlActivity$2.class" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/classes/debug/mx/itson/cmcarracing/GameControlActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/classes/debug/mx/itson/cmcarracing/GameControlActivity$MyClientTask.class" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/classes/debug/mx/itson/cmcarracing/GameControlActivity$MyClientTask.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/classes/debug/mx/itson/cmcarracing/GameControlActivity.class" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/classes/debug/mx/itson/cmcarracing/GameControlActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/classes/debug/mx/itson/cmcarracing/RacerGameActivity$1.class" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/classes/debug/mx/itson/cmcarracing/RacerGameActivity$1.class" />
@@ -35,11 +34,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/resources/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/GameControlActivity.java" afterPath="$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/GameControlActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/RacerGameActivity.java" afterPath="$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/RacerGameActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CMCarRacing.iws" />
@@ -167,7 +164,37 @@
     <favorites_list name="CMCarRacing" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="GameControlActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/GameControlActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="111" column="29" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RacerGameActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/RacerGameActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.3426967">
+              <caret line="428" column="100" selection-start-line="428" selection-start-column="100" selection-end-line="428" selection-end-column="100" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#21691#21699#0" expanded="true" />
+                <element signature="e#30863#30864#0" expanded="true" />
+                <element signature="e#30902#30903#0" expanded="true" />
+                <element signature="e#30945#30946#0" expanded="true" />
+                <element signature="e#30994#30995#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -3160,8 +3187,8 @@
         <option value="$PROJECT_DIR$/andEngine/src/main/java/org/andengine/opengl/view/EngineRenderer.java" />
         <option value="$PROJECT_DIR$/andEngine/src/main/java/org/andengine/entity/Entity.java" />
         <option value="$PROJECT_DIR$/andEngine/src/main/java/org/andengine/ui/activity/BaseGameActivity.java" />
-        <option value="$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/GameControlActivity.java" />
         <option value="$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/RacerGameActivity.java" />
+        <option value="$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/GameControlActivity.java" />
       </list>
     </option>
   </component>
@@ -3218,6 +3245,48 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMCarRacing" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cMCarRacing" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMCarRacing" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cMCarRacing" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMCarRacing" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cMCarRacing" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmcarracing" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -3233,8 +3302,8 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="20bc6b1b 5200bda849cda000" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21_x86" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="20bc6b1b emulator-5554 5200bda849cda000" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="3_7_FWVGA_slider_API_19" />
     <property name="android.project.structure.last.selected" value="andEngine" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cMCarRacing/src/main/libs/libs.jar" />
@@ -3473,7 +3542,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3492,7 +3561,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24878837" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24878837" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718122" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3847,6 +3916,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7949438">
           <caret line="1384" column="56" selection-start-line="1384" selection-start-column="56" selection-end-line="1384" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3872,30 +3942,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/RacerGameActivity.java">
+    <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/GameControlActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="17.949438">
-          <caret line="426" column="44" selection-start-line="426" selection-start-column="44" selection-end-line="426" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="111" column="29" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/GameControlActivity.java">
+    <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/RacerGameActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.22191">
-          <caret line="406" column="0" selection-start-line="406" selection-start-column="0" selection-end-line="406" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.3426967">
+          <caret line="428" column="100" selection-start-line="428" selection-start-column="100" selection-end-line="428" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8409#9192#0" expanded="true" />
-            <element signature="e#8574#9177#0" expanded="true" />
-            <element signature="e#8747#9158#0" expanded="true" />
-            <element signature="e#8928#9135#0" expanded="true" />
-            <element signature="e#9134#9135#0" expanded="true" />
-            <element signature="e#9157#9158#0" expanded="true" />
-            <element signature="e#9176#9177#0" expanded="true" />
-            <element signature="e#9191#9192#0" expanded="true" />
+            <element signature="e#21691#21699#0" expanded="true" />
+            <element signature="e#30863#30864#0" expanded="true" />
+            <element signature="e#30902#30903#0" expanded="true" />
+            <element signature="e#30945#30946#0" expanded="true" />
+            <element signature="e#30994#30995#0" expanded="true" />
           </folding>
         </state>
       </provider>
