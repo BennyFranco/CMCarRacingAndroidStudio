@@ -18,31 +18,125 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c38db128-a824-4811-8553-66d8f15334a2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngine/unspecified/classes.jar" afterPath="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngine/unspecified/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngine/unspecified/classes.jar" afterPath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngine/unspecified/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngine/unspecified/classes.jar" afterPath="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngine/unspecified/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngine/unspecified/classes.jar" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngine/unspecified/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngineMultiplayerExtension/unspecified/classes.jar" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngineMultiplayerExtension/unspecified/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEnginePhysicsBox2DExtension/unspecified/classes.jar" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEnginePhysicsBox2DExtension/unspecified/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngineTexturePackerExtension/unspecified/classes.jar" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/exploded-aar/CMCarRacingAndroidStudio/andEngineTexturePackerExtension/unspecified/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngine/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/andEngine/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/resources/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/cMCarRacing/build/intermediates/resources/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/RacerGameActivity.java" afterPath="$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/RacerGameActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMCarRacingAndroidStudio.iml" afterPath="$PROJECT_DIR$/CMCarRacingAndroidStudio.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngine/andEngine.iml" afterPath="$PROJECT_DIR$/andEngine/andEngine.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineMultiplayerExtension/andEngineMultiplayerExtension.iml" afterPath="$PROJECT_DIR$/andEngineMultiplayerExtension/andEngineMultiplayerExtension.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/andEnginePhysicsBox2DExtension.iml" afterPath="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/andEnginePhysicsBox2DExtension.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/andEngineTexturePackerExtension/andEngineTexturePackerExtension.iml" afterPath="$PROJECT_DIR$/andEngineTexturePackerExtension/andEngineTexturePackerExtension.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cMCarRacing/cMCarRacing.iml" afterPath="$PROJECT_DIR$/cMCarRacing/cMCarRacing.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CMCarRacing.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/classes/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/assets/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/bundles/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/classes/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/coverage-instrumented-classes/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/dependency-cache/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/dex/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/dex-cache/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/jacoco/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/javaResources/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/libs/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/lint/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/ndk/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/pre-dexed/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/proguard/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/rs/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/andEngine/build/tmp/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/assets/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/bundles/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/classes/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/coverage-instrumented-classes/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/dependency-cache/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/dex/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/dex-cache/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/jacoco/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/javaResources/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/libs/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/lint/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/ndk/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/pre-dexed/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/proguard/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/rs/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/andEngineMultiplayerExtension/build/tmp/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/assets/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/bundles/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/classes/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/coverage-instrumented-classes/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/dependency-cache/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/dex/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/dex-cache/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/jacoco/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/javaResources/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/libs/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/lint/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/ndk/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/pre-dexed/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/proguard/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/rs/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build/tmp/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/assets/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/bundles/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/classes/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/coverage-instrumented-classes/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/dependency-cache/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/dex/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/dex-cache/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/jacoco/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/javaResources/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/libs/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/lint/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/ndk/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/pre-dexed/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/proguard/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/rs/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/andEngineTexturePackerExtension/build/tmp/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/assets/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/bundles/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/classes/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/coverage-instrumented-classes/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/dependency-cache/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/dex/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/dex-cache/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/incremental/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/jacoco/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/javaResources/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/libs/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/lint/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/manifests/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/ndk/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/pre-dexed/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/proguard/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/res/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/rs/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/intermediates/symbols/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/outputs/" />
+    <ignored path="$PROJECT_DIR$/cMCarRacing/build/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,61 +147,20 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="CMCarRacing" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RacerGameActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/RacerGameActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="6210" max-vertical-offset="7515">
-              <caret line="477" column="32" selection-start-line="477" selection-start-column="32" selection-end-line="477" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EngineRenderer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/andEngine/src/main/java/org/andengine/opengl/view/EngineRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1262" max-vertical-offset="1725">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scene.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/andEngine/src/main/java/org/andengine/entity/scene/Scene.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3097" max-vertical-offset="6450">
-              <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/andEngine/src/main/java/org/andengine/entity/Entity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="19087" max-vertical-offset="19860">
-              <caret line="1381" column="0" selection-start-line="1381" selection-start-column="0" selection-end-line="1381" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameControlActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GameControlActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/GameControlActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="6120">
-              <caret line="283" column="28" selection-start-line="283" selection-start-column="28" selection-end-line="283" selection-end-column="28" />
-              <folding />
+            <state vertical-scroll-proportion="-0.8005618">
+              <caret line="113" column="72" selection-start-line="113" selection-start-column="72" selection-end-line="113" selection-end-column="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -3099,26 +3152,8 @@
       </map>
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="changedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/manifests/tmp/manifestMerger6180947147913697619.xml" />
-        <option value="$PROJECT_DIR$/andEngine/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/andEngine/build.gradle" />
-        <option value="$PROJECT_DIR$/andEngineMultiplayerExtension/build/intermediates/manifests/tmp/manifestMerger4842254714595518908.xml" />
-        <option value="$PROJECT_DIR$/andEngineTexturePackerExtension/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/andEngineMultiplayerExtension/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/local.properties" />
-        <option value="$PROJECT_DIR$/cMCarRacing/build.gradle" />
-        <option value="$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build.gradle" />
-        <option value="$PROJECT_DIR$/andEngineMultiplayerExtension/build.gradle" />
-        <option value="$PROJECT_DIR$/andEngineTexturePackerExtension/build.gradle" />
-        <option value="$PROJECT_DIR$/cMCarRacing/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/RacerGameActivity.java" />
-      </list>
-    </option>
+  <component name="NamedScopeManager">
+    <order />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -3161,7 +3196,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -3214,7 +3249,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3234,13 +3270,28 @@
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Android Application.cMCarRacing">
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_SELECTION_ERROR" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -3262,6 +3313,55 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_SELECTION_ERROR" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -3273,6 +3373,7 @@
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -3299,60 +3400,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
     <configuration default="false" name="cMCarRacing" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="cMCarRacing" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -3371,6 +3418,10 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_SELECTION_ERROR" value="" />
       <RunnerSettings RunnerId="AndroidDebugRunner" />
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
@@ -3403,6 +3454,7 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="c38db128-a824-4811-8553-66d8f15334a2" name="Default" comment="" />
       <created>1429581399170</created>
+      <option name="number" value="Default" />
       <updated>1429581399170</updated>
     </task>
     <servers />
@@ -3429,34 +3481,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3590604" sideWeight="0.16962843" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45805368" sideWeight="0.17447495" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923833" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3590604" sideWeight="0.83037156" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3557047" sideWeight="0.82552505" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285151" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19789983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24878837" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718122" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3285151" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718122" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -3471,49 +3524,28 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/RacerGameActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8355">
-          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/GameControlActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="6120">
-          <caret line="230" column="17" selection-start-line="230" selection-start-column="17" selection-end-line="230" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="855">
+        <state vertical-scroll-proportion="0.0">
           <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngine/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngine/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="225">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
           <folding />
         </state>
@@ -3521,35 +3553,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="705">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngine/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="720">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="315">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="705">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngine/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="225">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="26" />
           <folding />
         </state>
@@ -3557,175 +3589,175 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngine/src/main/java/org/andengine/engine/Engine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="14115">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEnginePhysicsBox2DExtension/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="210">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="270">
+        <state vertical-scroll-proportion="0.0">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="165">
+        <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cMCarRacing/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="570">
+        <state vertical-scroll-proportion="0.0">
           <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngine/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="810">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="315">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngineMultiplayerExtension/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="765">
+        <state vertical-scroll-proportion="0.0">
           <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEnginePhysicsBox2DExtension/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="135">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="165">
+        <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="210">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngineTexturePackerExtension/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="420">
+        <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cMCarRacing/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="600">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/import-summary.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2535">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngine/src/main/jni/src/GLES20Fix.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1517067" vertical-offset="0" max-vertical-offset="791">
+        <state vertical-scroll-proportion="0.1517067">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngineTexturePackerExtension/src/main/java/org/andengine/extension/texturepacker/opengl/texture/util/texturepacker/AssetTexturePackParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.094816685" vertical-offset="0" max-vertical-offset="960">
+        <state vertical-scroll-proportion="0.094816685">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEnginePhysicsBox2DExtension/src/main/java/org/andengine/extension/physics/box2d/PhysicsWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2730">
+        <state vertical-scroll-proportion="0.0">
           <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEnginePhysicsBox2DExtension/src/main/java/com/badlogic/gdx/utils/LongMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="9630">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngine/src/main/java/org/andengine/engine/Engine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="13455">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.397878" vertical-offset="0" max-vertical-offset="377">
+        <state vertical-scroll-proportion="0.397878">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cMCarRacing/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67639256" vertical-offset="0" max-vertical-offset="510">
+        <state vertical-scroll-proportion="0.67639256">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngineTexturePackerExtension/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
           <folding />
         </state>
@@ -3733,7 +3765,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/andEnginePhysicsBox2DExtension/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2387268" vertical-offset="0" max-vertical-offset="377">
+        <state vertical-scroll-proportion="0.2387268">
           <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
           <folding />
         </state>
@@ -3741,7 +3773,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngineMultiplayerExtension/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2387268" vertical-offset="0" max-vertical-offset="377">
+        <state vertical-scroll-proportion="0.2387268">
           <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
           <folding />
         </state>
@@ -3749,7 +3781,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngine/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2387268" vertical-offset="0" max-vertical-offset="377">
+        <state vertical-scroll-proportion="0.2387268">
           <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
           <folding />
         </state>
@@ -3757,101 +3789,118 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3183024" vertical-offset="0" max-vertical-offset="377">
+        <state vertical-scroll-proportion="0.3183024">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngineMultiplayerExtension/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="555">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngineTexturePackerExtension/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3183024" vertical-offset="0" max-vertical-offset="435">
+        <state vertical-scroll-proportion="0.3183024">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngine/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+        <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEnginePhysicsBox2DExtension/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7161804" vertical-offset="60" max-vertical-offset="615">
+        <state vertical-scroll-proportion="0.7161804">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0397878" vertical-offset="0" max-vertical-offset="377">
+        <state vertical-scroll-proportion="0.0397878">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66313" vertical-offset="305" max-vertical-offset="855">
+        <state vertical-scroll-proportion="0.66313">
           <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/GameControlActivity.java">
+    <entry file="file://$PROJECT_DIR$/andEngine/src/main/java/org/andengine/opengl/font/FontFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="6120">
-          <caret line="283" column="28" selection-start-line="283" selection-start-column="28" selection-end-line="283" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngine/src/main/java/org/andengine/opengl/view/EngineRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1262" max-vertical-offset="1725">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="3.5084746">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/andEngine/src/main/java/org/andengine/entity/scene/Scene.java">
+    <entry file="file://$PROJECT_DIR$/andEngine/src/main/java/org/andengine/ui/activity/BaseGameActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3097" max-vertical-offset="6450">
-          <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.88169014">
+          <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/andEngine/src/main/java/org/andengine/entity/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="19087" max-vertical-offset="19860">
+        <state vertical-scroll-proportion="-0.13595167">
           <caret line="1381" column="0" selection-start-line="1381" selection-start-column="0" selection-end-line="1381" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/andEngine/src/main/java/org/andengine/entity/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="259" column="0" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/RacerGameActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="6210" max-vertical-offset="7515">
-          <caret line="477" column="32" selection-start-line="477" selection-start-column="32" selection-end-line="477" selection-end-column="32" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="179" column="27" selection-start-line="178" selection-start-column="44" selection-end-line="178" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cMCarRacing/src/main/java/mx/itson/cmcarracing/GameControlActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8005618">
+          <caret line="113" column="72" selection-start-line="113" selection-start-column="72" selection-end-line="113" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
 </project>
-
