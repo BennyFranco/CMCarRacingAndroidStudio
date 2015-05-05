@@ -38,10 +38,11 @@ import android.widget.FrameLayout.LayoutParams;
 
 /**
  * (c) 2010 Nicolas Gramlich
- * (c) 2011 Zynga Inc.
- * 
- * @author Nicolas Gramlich
- * @since 11:27:06 - 08.03.2010
+ * (c) 2011 Zynga
+ * (c) 2015 Franco, B.; Parra, M.; Calderon, R. F.; Ramos, J. M.
+ *
+ * @author Franco, B.; Parra, M.; Calderon, R. F.; Ramos, J. M.
+ * @since 22:43:20 - 15.07.2010
  */
 public abstract class BaseGameActivity extends BaseActivity implements IGameInterface, IRendererListener {
 	// ===========================================================

@@ -4,8 +4,13 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
 import org.andengine.engine.Engine;
+import org.andengine.engine.camera.Camera;
+import org.andengine.engine.camera.hud.HUD;
 import org.andengine.engine.options.RenderOptions;
+import org.andengine.entity.text.Text;
+import org.andengine.entity.text.TextOptions;
 import org.andengine.opengl.util.GLState;
+import org.andengine.util.HorizontalAlign;
 import org.andengine.util.debug.Debug;
 
 import android.opengl.GLES20;
@@ -32,7 +37,6 @@ public class EngineRenderer implements GLSurfaceView.Renderer {
 	final boolean mMultiSampling;
 	final IRendererListener mRendererListener;
 	final GLState mGLState;
-
 	// ===========================================================
 	// Constructors
 	// ===========================================================

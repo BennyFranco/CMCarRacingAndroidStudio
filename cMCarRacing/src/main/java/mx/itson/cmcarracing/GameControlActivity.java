@@ -1,5 +1,9 @@
 package mx.itson.cmcarracing;
 
+import android.content.Context;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.opengl.GLES20;
 import android.os.AsyncTask;
 
@@ -8,7 +12,12 @@ import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
 
+import org.andengine.audio.music.Music;
+import org.andengine.audio.music.MusicFactory;
+import org.andengine.audio.sound.Sound;
+import org.andengine.audio.sound.SoundFactory;
 import org.andengine.engine.camera.Camera;
+import org.andengine.engine.camera.hud.HUD;
 import org.andengine.engine.camera.hud.controls.AnalogOnScreenControl;
 import org.andengine.engine.camera.hud.controls.AnalogOnScreenControl.IAnalogOnScreenControlListener;
 import org.andengine.engine.camera.hud.controls.BaseOnScreenControl;
@@ -20,12 +29,17 @@ import org.andengine.entity.scene.Scene;
 import org.andengine.entity.scene.background.Background;
 import org.andengine.entity.sprite.Sprite;
 import org.andengine.entity.sprite.TiledSprite;
+import org.andengine.entity.text.Text;
+import org.andengine.entity.text.TextOptions;
 import org.andengine.entity.util.FPSLogger;
 import org.andengine.extension.physics.box2d.FixedStepPhysicsWorld;
 import org.andengine.extension.physics.box2d.PhysicsConnector;
 import org.andengine.extension.physics.box2d.PhysicsFactory;
 import org.andengine.extension.physics.box2d.PhysicsWorld;
 import org.andengine.extension.physics.box2d.util.Vector2Pool;
+import org.andengine.opengl.font.Font;
+import org.andengine.opengl.font.FontFactory;
+import org.andengine.opengl.texture.ITexture;
 import org.andengine.opengl.texture.TextureOptions;
 import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlas;
 import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlasTextureRegionFactory;
@@ -33,6 +47,9 @@ import org.andengine.opengl.texture.region.ITextureRegion;
 import org.andengine.opengl.texture.region.TiledTextureRegion;
 import org.andengine.opengl.vbo.VertexBufferObjectManager;
 import org.andengine.ui.activity.SimpleBaseGameActivity;
+import org.andengine.util.HorizontalAlign;
+import org.andengine.util.debug.Debug;
+import org.andengine.util.math.MathUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -41,12 +58,14 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.Random;
 
 /**
  * (c) 2010 Nicolas Gramlich
  * (c) 2011 Zynga
+ * (c) 2015 Franco, B.; Parra, M.; Calderon, R. F.; Ramos, J. M.
  *
- * @author Nicolas Gramlich
+ * @author Franco, B.; Parra, M.; Calderon, R. F.; Ramos, J. M.
  * @since 22:43:20 - 15.07.2010
  */
 public class GameControlActivity extends SimpleBaseGameActivity {
@@ -56,7 +75,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	private static final int RACETRACK_WIDTH = 64;
 
 	private static final int OBSTACLE_SIZE = 16;
-	private static final int CAR_SIZE = 16;
+	private static final int CAR_SIZE = 64;
 
 	private static final int CAMERA_WIDTH = RACETRACK_WIDTH * 5;
 	private static final int CAMERA_HEIGHT = RACETRACK_WIDTH * 3;
@@ -89,7 +108,27 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	private Body mCarBody;
 	private TiledSprite mCar;
 
-    static final int SocketServerPORT = 3389;
+	private Text mHudText;
+	private double mScore=1000;
+	private int most;
+
+	private int indexCar;
+
+	private Font gameFont;
+
+	private Music mMusic;
+	private Music bg1;
+	private Music bg2;
+	private Music bg3;
+	private Music bg4;
+	private Music bg5;
+
+	private Sound punch;
+	private Sound smashing;
+	private Sound vehicle;
+
+	static final int SocketServerPORT = 3389;
+	private ITexture mScoreFontTexture;
 	// ===========================================================
 	// Constructors
 	// ===========================================================
@@ -105,13 +144,22 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 	@Override
 	public EngineOptions onCreateEngineOptions() {
 		this.mCamera = new Camera(0, 0, CAMERA_WIDTH, CAMERA_HEIGHT);
+		EngineOptions eo = new  EngineOptions(true, ScreenOrientation.LANDSCAPE_FIXED, new RatioResolutionPolicy(CAMERA_WIDTH, CAMERA_HEIGHT), this.mCamera);
+		eo.getAudioOptions().setNeedsMusic(true).setNeedsSound(true);
 
-		return new EngineOptions(true, ScreenOrientation.LANDSCAPE_FIXED, new RatioResolutionPolicy(CAMERA_WIDTH, CAMERA_HEIGHT), this.mCamera);
+		return eo;
 	}
 
 	@Override
 	public void onCreateResources() {
 		BitmapTextureAtlasTextureRegionFactory.setAssetBasePath("gfx/");
+
+		// Inicializar fuentes
+		FontFactory.setAssetBasePath("font/");
+
+		ITexture fontTexture5 = new BitmapTextureAtlas(this.getTextureManager(), 256, 256, TextureOptions.BILINEAR);
+		gameFont= FontFactory.createStrokeFromAsset(this.getFontManager(), fontTexture5, this.getAssets(), "mariokartds.ttf", 24, true, Color.WHITE, 2, Color.WHITE);
+		gameFont.load();
 
 		this.mVehiclesTexture = new BitmapTextureAtlas(this.getTextureManager(), 128, 16, TextureOptions.BILINEAR);
 		this.mVehiclesTextureRegion = BitmapTextureAtlasTextureRegionFactory.createTiledFromAsset(this.mVehiclesTexture, this, "vehicles.png", 0, 0, 6, 1);
@@ -130,6 +178,53 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 		this.mBoxTexture = new BitmapTextureAtlas(this.getTextureManager(), 32, 32, TextureOptions.BILINEAR);
 		this.mBoxTextureRegion = BitmapTextureAtlasTextureRegionFactory.createFromAsset(this.mBoxTexture, this, "box.png", 0, 0);
 		this.mBoxTexture.load();
+
+		SoundFactory.setAssetBasePath("mfx/");
+		try {
+			punch = SoundFactory.createSoundFromAsset(getEngine().getSoundManager(), this, "punch.ogg");
+			smashing = SoundFactory.createSoundFromAsset(getEngine().getSoundManager(), this, "smashing.ogg");
+			vehicle = SoundFactory.createSoundFromAsset(getEngine().getSoundManager(), this, "vehicle177.ogg");
+		} catch (final IOException e) {
+			Debug.e(e);
+		}
+
+		MusicFactory.setAssetBasePath("mfx/");
+		try {
+			bg1 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg1.ogg");
+			bg2 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg2.ogg");
+			bg3 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg3.ogg");
+			bg4 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg4.ogg");
+			bg5 = MusicFactory.createMusicFromAsset(getEngine().getMusicManager(), this, "bg5.ogg");
+			//mMusic.setLooping(true);
+				bg1.play();
+				bg1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+					@Override
+					public void onCompletion(MediaPlayer mediaPlayer) {
+						bg2.play();
+						bg2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+							@Override
+							public void onCompletion(MediaPlayer mediaPlayer) {
+								bg3.play();
+								bg3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+									@Override
+									public void onCompletion(MediaPlayer mediaPlayer) {
+										bg4.play();
+										bg4.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+											@Override
+											public void onCompletion(MediaPlayer mediaPlayer) {
+												bg5.play();
+												bg5.setLooping(true);
+											}
+										});
+									}
+								});
+							}
+						});
+					}
+				});
+		} catch (final IOException e) {
+			Debug.e(e);
+		}
 	}
 
 	@Override
@@ -139,18 +234,35 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 
 		this.mScene = new Scene();
 		this.mScene.setBackground(new Background(0, 0, 0));
-
 		this.mPhysicsWorld = new FixedStepPhysicsWorld(30, new Vector2(0, 0), false, 8, 1);
 
 //		this.initRacetrack();
 //		this.initRacetrackBorders();
-//		this.initCar();
 //		this.initObstacles();
 		this.initOnScreenControls();
+		this.initCar(carHashCode);
+
 
 		this.mScene.registerUpdateHandler(this.mPhysicsWorld);
 
+
+
 		return this.mScene;
+	}
+
+	private void initCar(int tag) {
+		this.mCar = new TiledSprite(CAMERA_WIDTH-96, 80, CAR_SIZE, CAR_SIZE, this.mVehiclesTextureRegion, this.getVertexBufferObjectManager());
+		indexCar=randomCar(this.hashCode(String.valueOf(Math.random())));
+		this.mCar.setCurrentTileIndex(indexCar);
+		this.mCar.setTag(tag);
+
+		final FixtureDef carFixtureDef = PhysicsFactory.createFixtureDef(1, 0.5f, 0.5f);
+		this.mCarBody = PhysicsFactory.createBoxBody(this.mPhysicsWorld, this.mCar, BodyType.DynamicBody, carFixtureDef);
+		this.mCarBody.setUserData(tag);
+
+		this.mPhysicsWorld.registerPhysicsConnector(new PhysicsConnector(this.mCar, this.mCarBody, true, false));
+
+		this.mScene.attachChild(this.mCar);
 	}
 
 	@Override
@@ -208,25 +320,51 @@ public class GameControlActivity extends SimpleBaseGameActivity {
                     dataOutputStream.writeUTF(msgToServer);
                 }
                 response = dataInputStream.readUTF();
-            } catch (UnknownHostException e) {
+				JSONObject json = new JSONObject(response);
+				String accion = json.getString("accion");
+				Debug.d("JSON", json.toString());
+				//if(accion==""){mScore+=0.5;}
+				try{
+					mScore = json.getDouble("Score");
+					Debug.d("SCORE: ", String.valueOf(mScore));
+					//create HUD for score
+					HUD gameHUD = new HUD();
+					// CREATE SCORE TEXT
+					mScene.setBackground(new Background(255, 0, 0));
+					mHudText.setText("Life: " + mScore);
+					mHudText.setX((CAMERA_WIDTH - mHudText.getWidth()) / 2);
+					//mHudText.setVisible(false);
+					gameHUD.attachChild(mHudText);
+					mCamera.setHUD(gameHUD);
+					mScene.setBackground(new Background(0, 0, 0));
+					mCamera.setHUD(gameHUD);
+				}catch(Exception e) {}
+
+				if(mScore<=0){
+					dataInputStream.close();
+					dataOutputStream.close();
+				}
+			} catch (UnknownHostException e) {
                 // TODO Auto-generated catch block
-                e.printStackTrace();
+                //e.printStackTrace();
                 response = "UnknownHostException: " + e.toString();
                 setResult(RESULT_CANCELED);
                 finish();
             } catch (IOException e) {
                 // TODO Auto-generated catch block
-                e.printStackTrace();
+                //e.printStackTrace();
                 response = "IOException: " + e.toString();
                 setResult(RESULT_CANCELED);
                 finish();
-            } finally {
+            } catch (JSONException e) {
+				e.printStackTrace();
+			} finally {
                 if (socket != null) {
                     try {
                         socket.close();
                     } catch (IOException e) {
                         // TODO Auto-generated catch block
-                        e.printStackTrace();
+                       // e.printStackTrace();
                     }
                 }
 
@@ -235,7 +373,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
                         dataOutputStream.close();
                     } catch (IOException e) {
                         // TODO Auto-generated catch block
-                        e.printStackTrace();
+						//e.printStackTrace();
                     }
                 }
 
@@ -244,7 +382,7 @@ public class GameControlActivity extends SimpleBaseGameActivity {
                         dataInputStream.close();
                     } catch (IOException e) {
                         // TODO Auto-generated catch block
-                        e.printStackTrace();
+                       // e.printStackTrace();
                     }
                 }
             }
@@ -273,9 +411,9 @@ public class GameControlActivity extends SimpleBaseGameActivity {
                 }
 
 				final Vector2 velocity = Vector2Pool.obtain(pValueX * 5, pValueY * 5);
-
-
 				final float rotationInRad = (float)Math.atan2(-pValueX, pValueY);
+
+				mCar.setRotation(MathUtils.radToDeg(rotationInRad));
                 JSONObject json= new JSONObject();
                 try {
                     json.put("accion","movimiento");
@@ -283,6 +421,8 @@ public class GameControlActivity extends SimpleBaseGameActivity {
                     json.put("velocidady",velocity.y);
                     json.put("rotacion",rotationInRad);
                     json.put("tag",carHashCode);
+					json.put("score",mScore);
+					json.put("indexCar", indexCar);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -302,6 +442,17 @@ public class GameControlActivity extends SimpleBaseGameActivity {
 		//		analogOnScreenControl.getControlBase().setScale(0.75f);
 		//		analogOnScreenControl.getControlKnob().setScale(0.75f);
 		analogOnScreenControl.refreshControlKnobPosition();
+
+		//create HUD for score
+		HUD gameHUD = new HUD();
+		// CREATE SCORE TEXT
+		mHudText = new Text(CAMERA_WIDTH/2, 0, gameFont, "0123456789", new TextOptions(HorizontalAlign.LEFT), this.getVertexBufferObjectManager());
+		mHudText.setText("Life: "+mScore);
+		mHudText.setX((CAMERA_WIDTH - mHudText.getWidth()) / 2);
+		//mHudText.setVisible(false);
+
+		gameHUD.attachChild(mHudText);
+		mCamera.setHUD(gameHUD);
 
 		this.mScene.setChildScene(analogOnScreenControl);
 	}
@@ -435,6 +586,20 @@ public class GameControlActivity extends SimpleBaseGameActivity {
         return hc;
     }
 
+	public int getMaxScore() {
+		return getPreferences(Context.MODE_PRIVATE).getInt("maxScore", 0);
+	}
+
+	public void setMaxScore(int maxScore) {
+		getPreferences(Context.MODE_PRIVATE).edit().putInt("maxScore", maxScore).commit();
+	}
+
+	private int randomCar(int tag){
+		Random rn = new Random();
+		rn.setSeed(tag);
+
+		return rn.nextInt(5);
+	}
 	
 	// ===========================================================
 	// Inner and Anonymous Classes
